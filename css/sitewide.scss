@@ -1,0 +1,291 @@
+/*
+================================================================================
+
+General look and utility useful across the whole site
+
+================================================================================
+*/
+
+/*
+----------------------------------------
+Layout
+----------------------------------------
+*/
+
+$mainBreakpoint: 630px;
+
+// TODO - incorporate into other files
+
+
+
+/*
+----------------------------------------
+Colors
+----------------------------------------
+*/
+
+:root {
+    color-scheme: light dark;
+
+	--color-Link:			hsl(202, 65%, 63%);
+	--color-Link-hover:		hsl(202, 65%, 43%);
+	--color-Inverse:		hsl(20, 65%, 63%);
+	--color-Warning:		purple;
+	--color-paper-high:		white;
+	--color-paper-med:		hsl(0, 0%, 96%);
+	--color-paper-low:		hsl(0, 0%, 74%);
+	--color-ink-low:		hsl(0, 0%, 38%);
+	--color-ink-med:		hsl(0, 0%, 26%);
+	--color-ink-high:		hsl(0, 0%, 13%);
+	--color-ink-max:		black;
+
+
+	--color-dark-high:		hsl(0, 0%, 13%);
+
+}
+
+
+
+@media (prefers-color-scheme: dark) {
+
+	:root {
+		--color-Link:			hsl(202, 65%, 63%);
+		--color-Link-hover:		hsl(202, 65%, 43%);
+		--color-Inverse:		hsl(20, 65%, 63%);
+		--color-Warning:		purple;
+		--color-paper-high:		hsl(0, 0%, 0%);
+		--color-paper-med:		hsl(0, 0%, 4%);
+		--color-paper-low:		hsl(0, 0%, 26%);
+		--color-ink-low:		hsl(0, 0%, 62%);
+		--color-ink-med:		hsl(0, 0%, 74%);
+		--color-ink-high:		hsl(0, 0%, 87%);
+
+		--color-dark-high:		hsl(0, 0%, 4%);
+   }
+}
+
+html { color:var(--color-ink-high); }
+
+a { color:var(--color-Link); }
+
+.dimmer {
+	color:var(--color-ink-low);
+}
+
+main {
+	background:var(--color-paper-high);
+}
+
+section.lightgray {
+	background:var(--color-paper-low);
+}
+
+
+/*
+----------------------------------------
+Typography
+----------------------------------------
+*/
+
+body {
+	font:20px/1.6 freight-sans-condensed-pro, Helvetica, Helvetica Neue, Arial;
+	font-weight:400;
+}
+
+dt {
+	font-weight:bold;
+}
+
+.blogdate {
+	font-weight:normal;
+	color:var(--color-paper-low);
+}
+
+img.small {
+	float:right;
+	margin-left:1em;
+	max-width:25%;
+}
+
+blockquote {
+	font-style:italic;
+	letter-spacing:2px;
+
+	footer {
+		font-style:normal;
+		letter-spacing:normal;
+		font-size:80%;
+	}
+}
+
+/*
+----------------------------------------
+Geometry
+----------------------------------------
+*/
+
+section {
+	padding-top:1rem;			// don't specify sides since those are handled separately
+	padding-bottom:1rem;
+}
+section.balance-footer {
+	padding-bottom:0;
+}
+
+/* for header and footer, full window width but indented a bit */
+
+body > footer p {
+	padding:20px 5%;
+	margin:0;
+	font-size:80%;
+}
+
+article.textual {
+	margin:0 auto;
+	padding:0 0;		/* if we use margin above then it messes with background image */
+	max-width:60rem;
+}
+
+body > footer {
+	background:var(--color-paper-low);
+	color:var(--color-paper-high);
+}
+
+
+/*
+----------------------------------------
+Responsive Video
+----------------------------------------
+*/
+
+.embed-container {
+	position:relative;
+	padding-bottom:56.25%;
+	height:0; overflow:hidden;
+	max-width:100%;
+
+	iframe, object, embed {
+		position:absolute;
+		top:0;
+		left:0;
+		width:100%;
+		height:100%;
+	}
+}
+
+
+/*
+----------------------------------------
+Grid System
+----------------------------------------
+*/
+
+.ksbox {
+    width: 100%;
+    float: left
+}
+
+.ksbox, .ksflex {
+    padding: 15px 15px
+}
+
+.ksbox > * :not(.group):first-child {
+    margin-top: 0
+}
+
+.ksbox > * :not(.group):last-child {
+    margin-bottom: 0
+}
+
+.directionRtoL .ksbox, .ksbox.opposite {
+    float: right
+}
+
+.directionRtoL .ksbox.opposite {
+    float: left
+}
+
+.group {
+    margin: -15px -15px
+}
+
+.flexbox {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-flow: row wrap;
+    flex-flow: row wrap
+}
+
+.flex-fill {
+    -moz-flex: 1 1 auto;
+    -ms-flex: 1 1 auto;
+    -webkit-box-flex: 1;
+    flex: 1 1 auto
+}
+
+.flex-down, .sidebar-container > .group {
+    -ms-flex-direction: column;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    flex-direction: column
+}
+
+.outdent-horizontally {
+    margin: 0 -15px
+}
+
+.no-padding .group, .no-padding .ksbox {
+    margin: 0
+}
+
+.no-padding .ksbox {
+    padding: 0
+}
+
+.padded {
+    padding: 20px
+}
+
+/*
+----------------------------------------
+Responsive Layout
+----------------------------------------
+*/
+
+
+img {
+	max-width:100%;
+}
+img.right {
+	float:right;
+	max-width:50%;
+	padding-left:1em;
+}
+img.half {
+	float:left;
+	max-width:50%;
+}
+
+
+@media only screen and (max-width:($mainBreakpoint - 1px)) {
+
+	/* On mobile, avoid left/right margin on some sections (except for their headers/footers which are textual) */
+
+	.maximize-mobile {
+		padding-left:0;
+		padding-right:0;
+		footer, header {
+			padding-left:1rem;
+			padding-right:1rem;
+		}
+	}
+
+	img.right, img.half {
+		max-width:100%;
+		float:none;
+		padding:0;
+	}
+}
+
+

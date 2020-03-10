@@ -1,0 +1,19 @@
+@import 'normalize';
+@import 'html5boilerplate';
+
+// Useful classes and layout that could be used on other sites
+@import 'generic.scss';
+
+// General look and utility useful across the whole site
+@import 'sitewide.scss';
+
+// For now, use the same CSS for all pages but we may want to separate later.
+@import 'homepage.scss';
+
+/* Debugging
+section:nth-child(even)	{background:cyan !important;}
+section:nth-child(odd)	{background:pink !important;}
+section header { background:red;}
+section article { background:yellow;}
+section footer { background:green;}
+*/

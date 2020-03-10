@@ -1,0 +1,15 @@
+{
+	"folders":
+	[
+		{
+		"path":".",
+			"follow_symlinks": true,
+			"file_exclude_patterns":[".*", "*.jpg", "*.png", "*.opacity", "*.webp", "*.php", "phpliteadmin*", "*.zip", "*.map", "*.gif", "*.jpeg", "*.ico", "*.html", "_Markdown*", "*.acorn", "*.css", "*.codekit*", "jquery*", "*.command", "*.sublime*",
+
+ "*-min.js", "robots.txt", "humans.txt", "browserconfig.xml", "CNAME"
+
+],
+			"folder_exclude_patterns":["_sources", "CACHE", "vendor", "svg", "img"]
+		}
+	]
+}
