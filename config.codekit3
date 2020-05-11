@@ -7,7 +7,7 @@
 		"uuidString": "311F3702-0350-4AF3-818B-24CD49C5E7D5"
 		}
 	],
-"creatorBuild": "31491",
+"creatorBuild": "32147",
 "files": {
 	"/404.html": {
 		"cB": 0,
@@ -15,476 +15,6 @@
 		"hM": 0,
 		"oA": 0,
 		"oAP": "/404.html",
-		"oF": 0
-		},
-	"/candidates/amberriddle.jpg": {
-		"ft": 16384,
-		"iS": 262698,
-		"jF": 0,
-		"oA": 0,
-		"oAP": "/candidates/amberriddle.jpg",
-		"oF": 0,
-		"oIPL": 0,
-		"opt": 0,
-		"q": 100
-		},
-	"/candidates/antoniohicks.jpg": {
-		"ft": 16384,
-		"iS": 25367,
-		"jF": 0,
-		"oA": 0,
-		"oAP": "/candidates/antoniohicks.jpg",
-		"oF": 0,
-		"oIPL": 0,
-		"opt": 0,
-		"q": 100
-		},
-	"/candidates/aoc.jpg": {
-		"ft": 16384,
-		"iS": 20161,
-		"jF": 0,
-		"oA": 0,
-		"oAP": "/candidates/aoc.jpg",
-		"oF": 0,
-		"oIPL": 0,
-		"opt": 0,
-		"q": 100
-		},
-	"/candidates/ashcraft.jpg": {
-		"ft": 16384,
-		"iS": 27949,
-		"jF": 0,
-		"oA": 0,
-		"oAP": "/candidates/ashcraft.jpg",
-		"oF": 0,
-		"oIPL": 0,
-		"opt": 0,
-		"q": 100
-		},
-	"/candidates/audreydenney.jpg": {
-		"ft": 16384,
-		"iS": 55458,
-		"jF": 0,
-		"oA": 0,
-		"oAP": "/candidates/audreydenney.jpg",
-		"oF": 0,
-		"oIPL": 0,
-		"opt": 0,
-		"q": 100
-		},
-	"/candidates/ayannapressley.jpg": {
-		"ft": 16384,
-		"iS": 21305,
-		"jF": 0,
-		"oA": 0,
-		"oAP": "/candidates/ayannapressley.jpg",
-		"oF": 0,
-		"oIPL": 0,
-		"opt": 0,
-		"q": 100
-		},
-	"/candidates/briannawu.jpg": {
-		"ft": 16384,
-		"iS": 24316,
-		"jF": 0,
-		"oA": 0,
-		"oAP": "/candidates/briannawu.jpg",
-		"oF": 0,
-		"oIPL": 0,
-		"opt": 0,
-		"q": 100
-		},
-	"/candidates/Burdette.jpg": {
-		"ft": 16384,
-		"iS": 137853,
-		"jF": 0,
-		"oA": 0,
-		"oAP": "/candidates/Burdette.jpg",
-		"oF": 0,
-		"oIPL": 0,
-		"opt": 0,
-		"q": 100
-		},
-	"/candidates/Caballero.jpg": {
-		"ft": 16384,
-		"iS": 146211,
-		"jF": 0,
-		"oA": 0,
-		"oAP": "/candidates/Caballero.jpg",
-		"oF": 0,
-		"oIPL": 0,
-		"opt": 0,
-		"q": 100
-		},
-	"/candidates/Call.jpg": {
-		"ft": 16384,
-		"iS": 234349,
-		"jF": 0,
-		"oA": 0,
-		"oAP": "/candidates/Call.jpg",
-		"oF": 0,
-		"oIPL": 0,
-		"opt": 0,
-		"q": 100
-		},
-	"/candidates/Carrigan.jpg": {
-		"ft": 16384,
-		"iS": 130716,
-		"jF": 0,
-		"oA": 0,
-		"oAP": "/candidates/Carrigan.jpg",
-		"oF": 0,
-		"oIPL": 0,
-		"opt": 0,
-		"q": 100
-		},
-	"/candidates/charlesbooker.jpg": {
-		"ft": 16384,
-		"iS": 30616,
-		"jF": 0,
-		"oA": 0,
-		"oAP": "/candidates/charlesbooker.jpg",
-		"oF": 0,
-		"oIPL": 0,
-		"opt": 0,
-		"q": 100
-		},
-	"/candidates/Clay.jpg": {
-		"ft": 16384,
-		"iS": 138308,
-		"jF": 0,
-		"oA": 0,
-		"oAP": "/candidates/Clay.jpg",
-		"oF": 0,
-		"oIPL": 0,
-		"opt": 0,
-		"q": 100
-		},
-	"/candidates/Collins.jpg": {
-		"ft": 16384,
-		"iS": 214542,
-		"jF": 0,
-		"oA": 0,
-		"oAP": "/candidates/Collins.jpg",
-		"oF": 0,
-		"oIPL": 0,
-		"opt": 0,
-		"q": 100
-		},
-	"/candidates/daniellockwood.jpg": {
-		"ft": 16384,
-		"iS": 31578,
-		"jF": 0,
-		"oA": 0,
-		"oAP": "/candidates/daniellockwood.jpg",
-		"oF": 0,
-		"oIPL": 0,
-		"opt": 0,
-		"q": 100
-		},
-	"/candidates/Dawkins.jpg": {
-		"ft": 16384,
-		"iS": 140516,
-		"jF": 0,
-		"oA": 0,
-		"oAP": "/candidates/Dawkins.jpg",
-		"oF": 0,
-		"oIPL": 0,
-		"opt": 0,
-		"q": 100
-		},
-	"/candidates/donnaimam.jpg": {
-		"ft": 16384,
-		"iS": 16564,
-		"jF": 0,
-		"oA": 0,
-		"oAP": "/candidates/donnaimam.jpg",
-		"oF": 0,
-		"oIPL": 0,
-		"opt": 0,
-		"q": 100
-		},
-	"/candidates/Emard.jpg": {
-		"ft": 16384,
-		"iS": 145397,
-		"jF": 0,
-		"oA": 0,
-		"oAP": "/candidates/Emard.jpg",
-		"oF": 0,
-		"oIPL": 0,
-		"opt": 0,
-		"q": 100
-		},
-	"/candidates/Hernandez.jpg": {
-		"ft": 16384,
-		"iS": 240490,
-		"jF": 0,
-		"oA": 0,
-		"oAP": "/candidates/Hernandez.jpg",
-		"oF": 0,
-		"oIPL": 0,
-		"opt": 0,
-		"q": 100
-		},
-	"/candidates/Hood.jpg": {
-		"ft": 16384,
-		"iS": 248783,
-		"jF": 0,
-		"oA": 0,
-		"oAP": "/candidates/Hood.jpg",
-		"oF": 0,
-		"oIPL": 0,
-		"opt": 0,
-		"q": 100
-		},
-	"/candidates/jessicacisneros.jpg": {
-		"ft": 16384,
-		"iS": 59043,
-		"jF": 0,
-		"oA": 0,
-		"oAP": "/candidates/jessicacisneros.jpg",
-		"oF": 0,
-		"oIPL": 0,
-		"opt": 1,
-		"q": 100
-		},
-	"/candidates/justinwooton.jpg": {
-		"ft": 16384,
-		"iS": 37508,
-		"jF": 0,
-		"oA": 0,
-		"oAP": "/candidates/justinwooton.jpg",
-		"oF": 0,
-		"oIPL": 0,
-		"opt": 0,
-		"q": 100
-		},
-	"/candidates/Kidman.jpg": {
-		"ft": 16384,
-		"iS": 268259,
-		"jF": 0,
-		"oA": 0,
-		"oAP": "/candidates/Kidman.jpg",
-		"oF": 0,
-		"oIPL": 0,
-		"opt": 0,
-		"q": 100
-		},
-	"/candidates/Kishineff.jpg": {
-		"ft": 16384,
-		"iS": 119447,
-		"jF": 0,
-		"oA": 0,
-		"oAP": "/candidates/Kishineff.jpg",
-		"oF": 0,
-		"oIPL": 0,
-		"opt": 0,
-		"q": 100
-		},
-	"/candidates/lorenagarcia.jpg": {
-		"ft": 16384,
-		"iS": 27754,
-		"jF": 0,
-		"oA": 0,
-		"oAP": "/candidates/lorenagarcia.jpg",
-		"oF": 0,
-		"oIPL": 0,
-		"opt": 0,
-		"q": 100
-		},
-	"/candidates/Ludwig.jpg": {
-		"ft": 16384,
-		"iS": 181947,
-		"jF": 0,
-		"oA": 0,
-		"oAP": "/candidates/Ludwig.jpg",
-		"oF": 0,
-		"oIPL": 0,
-		"opt": 0,
-		"q": 100
-		},
-	"/candidates/Manley.jpg": {
-		"ft": 16384,
-		"iS": 155594,
-		"jF": 0,
-		"oA": 0,
-		"oAP": "/candidates/Manley.jpg",
-		"oF": 0,
-		"oIPL": 0,
-		"opt": 0,
-		"q": 100
-		},
-	"/candidates/Marcano.jpg": {
-		"ft": 16384,
-		"iS": 117182,
-		"jF": 0,
-		"oA": 0,
-		"oAP": "/candidates/Marcano.jpg",
-		"oF": 0,
-		"oIPL": 0,
-		"opt": 0,
-		"q": 100
-		},
-	"/candidates/Mattlin.jpg": {
-		"ft": 16384,
-		"iS": 228368,
-		"jF": 0,
-		"oA": 0,
-		"oAP": "/candidates/Mattlin.jpg",
-		"oF": 0,
-		"oIPL": 0,
-		"opt": 0,
-		"q": 100
-		},
-	"/candidates/Mohsini.jpg": {
-		"ft": 16384,
-		"iS": 118109,
-		"jF": 0,
-		"oA": 0,
-		"oAP": "/candidates/Mohsini.jpg",
-		"oF": 0,
-		"oIPL": 0,
-		"opt": 0,
-		"q": 100
-		},
-	"/candidates/Mulcahy.jpg": {
-		"ft": 16384,
-		"iS": 148901,
-		"jF": 0,
-		"oA": 0,
-		"oAP": "/candidates/Mulcahy.jpg",
-		"oF": 0,
-		"oIPL": 0,
-		"opt": 0,
-		"q": 100
-		},
-	"/candidates/Nuckolls.jpg": {
-		"ft": 16384,
-		"iS": 192575,
-		"jF": 0,
-		"oA": 0,
-		"oAP": "/candidates/Nuckolls.jpg",
-		"oF": 0,
-		"oIPL": 0,
-		"opt": 0,
-		"q": 100
-		},
-	"/candidates/Rajput.jpg": {
-		"ft": 16384,
-		"iS": 191635,
-		"jF": 0,
-		"oA": 0,
-		"oAP": "/candidates/Rajput.jpg",
-		"oF": 0,
-		"oIPL": 0,
-		"opt": 0,
-		"q": 100
-		},
-	"/candidates/romanoff.jpg": {
-		"ft": 16384,
-		"iS": 16069,
-		"jF": 0,
-		"oA": 0,
-		"oAP": "/candidates/romanoff.jpg",
-		"oF": 0,
-		"oIPL": 0,
-		"opt": 0,
-		"q": 100
-		},
-	"/candidates/semahernandez.jpg": {
-		"ft": 16384,
-		"iS": 22893,
-		"jF": 0,
-		"oA": 0,
-		"oAP": "/candidates/semahernandez.jpg",
-		"oF": 0,
-		"oIPL": 0,
-		"opt": 0,
-		"q": 100
-		},
-	"/candidates/shahidbuttar.jpg": {
-		"ft": 16384,
-		"iS": 65470,
-		"jF": 0,
-		"oA": 0,
-		"oAP": "/candidates/shahidbuttar.jpg",
-		"oF": 0,
-		"oIPL": 0,
-		"opt": 0,
-		"q": 100
-		},
-	"/candidates/Smith.jpg": {
-		"ft": 16384,
-		"iS": 242997,
-		"jF": 0,
-		"oA": 0,
-		"oAP": "/candidates/Smith.jpg",
-		"oF": 0,
-		"oIPL": 0,
-		"opt": 0,
-		"q": 100
-		},
-	"/candidates/Snow.jpg": {
-		"ft": 16384,
-		"iS": 197281,
-		"jF": 0,
-		"oA": 0,
-		"oAP": "/candidates/Snow.jpg",
-		"oF": 0,
-		"oIPL": 0,
-		"opt": 0,
-		"q": 100
-		},
-	"/candidates/Thomas.jpg": {
-		"ft": 16384,
-		"iS": 166444,
-		"jF": 0,
-		"oA": 0,
-		"oAP": "/candidates/Thomas.jpg",
-		"oF": 0,
-		"oIPL": 0,
-		"opt": 0,
-		"q": 100
-		},
-	"/candidates/Vega.jpg": {
-		"ft": 16384,
-		"iS": 176629,
-		"jF": 0,
-		"oA": 0,
-		"oAP": "/candidates/Vega.jpg",
-		"oF": 0,
-		"oIPL": 0,
-		"opt": 0,
-		"q": 100
-		},
-	"/candidates/Vondrasek.jpg": {
-		"ft": 16384,
-		"iS": 198195,
-		"jF": 0,
-		"oA": 0,
-		"oAP": "/candidates/Vondrasek.jpg",
-		"oF": 0,
-		"oIPL": 0,
-		"opt": 0,
-		"q": 100
-		},
-	"/candidates/Winters.jpg": {
-		"ft": 16384,
-		"iS": 296105,
-		"jF": 0,
-		"oA": 0,
-		"oAP": "/candidates/Winters.jpg",
-		"oF": 0,
-		"oIPL": 0,
-		"opt": 0,
-		"q": 100
-		},
-	"/candidates_state_district.csv": {
-		"cB": 0,
-		"ft": 8192,
-		"hM": 0,
-		"oA": 0,
-		"oAP": "/candidates_state_district.csv",
 		"oF": 0
 		},
 	"/classes/class.housekeeping.php": {
@@ -499,27 +29,27 @@
 		"aP": 0,
 		"bl": 0,
 		"dP": 10,
-		"dS": 0,
+		"ec": 1,
 		"ft": 4,
 		"ma": 0,
 		"oA": 1,
 		"oAP": "/css/generic.css",
 		"oF": 0,
 		"oS": 0,
-		"uL": 1
+		"sct": 1
 		},
 	"/css/homepage.scss": {
 		"aP": 0,
 		"bl": 0,
 		"dP": 10,
-		"dS": 0,
+		"ec": 1,
 		"ft": 4,
 		"ma": 0,
 		"oA": 1,
 		"oAP": "/css/homepage.css",
 		"oF": 0,
 		"oS": 0,
-		"uL": 1
+		"sct": 1
 		},
 	"/css/html5boilerplate.css": {
 		"aP": 1,
@@ -553,14 +83,14 @@
 		"aP": 0,
 		"bl": 0,
 		"dP": 10,
-		"dS": 0,
+		"ec": 1,
 		"ft": 4,
 		"ma": 1,
 		"oA": 0,
 		"oAP": "/css/main.css",
 		"oF": 0,
 		"oS": 3,
-		"uL": 1
+		"sct": 1
 		},
 	"/css/normalize.css": {
 		"aP": 1,
@@ -576,14 +106,14 @@
 		"aP": 0,
 		"bl": 0,
 		"dP": 10,
-		"dS": 0,
+		"ec": 1,
 		"ft": 4,
 		"ma": 0,
 		"oA": 1,
 		"oAP": "/css/sitewide.css",
 		"oF": 1,
 		"oS": 0,
-		"uL": 1
+		"sct": 1
 		},
 	"/favicon.ico": {
 		"cB": 0,
@@ -620,143 +150,22 @@
 		"oAP": "/img/.gitignore",
 		"oF": 0
 		},
-	"/img/background-2gupHso.jpg": {
-		"ft": 16384,
-		"iS": 133697,
-		"jF": 0,
-		"oA": 0,
-		"oAP": "/img/background-2gupHso.jpg",
-		"oF": 0,
-		"oIPL": 0,
-		"opt": 0,
-		"q": 100
-		},
-	"/img/background-2guprGE.jpg": {
-		"ft": 16384,
-		"iS": 179361,
-		"jF": 0,
-		"oA": 0,
-		"oAP": "/img/background-2guprGE.jpg",
-		"oF": 0,
-		"oIPL": 0,
-		"opt": 0,
-		"q": 100
-		},
-	"/img/background-x8WUsc.jpg": {
-		"ft": 16384,
-		"iS": 245069,
-		"jF": 0,
-		"oA": 0,
-		"oAP": "/img/background-x8WUsc.jpg",
-		"oF": 0,
-		"oIPL": 0,
-		"opt": 0,
-		"q": 100
-		},
-	"/img/background1.jpg": {
-		"ft": 16384,
-		"iS": 160653,
-		"jF": 0,
-		"oA": 0,
-		"oAP": "/img/background1.jpg",
-		"oF": 0,
-		"oIPL": 0,
-		"opt": 0,
-		"q": 100
-		},
-	"/img/background2.jpg": {
-		"ft": 16384,
-		"iS": 225141,
-		"jF": 0,
-		"oA": 0,
-		"oAP": "/img/background2.jpg",
-		"oF": 0,
-		"oIPL": 0,
-		"opt": 0,
-		"q": 100
-		},
-	"/img/background3.jpg": {
-		"ft": 16384,
-		"iS": 158905,
-		"jF": 0,
-		"oA": 0,
-		"oAP": "/img/background3.jpg",
-		"oF": 0,
-		"oIPL": 0,
-		"opt": 0,
-		"q": 100
-		},
-	"/img/background4.jpg": {
-		"ft": 16384,
-		"iS": 164833,
-		"jF": 0,
-		"oA": 0,
-		"oAP": "/img/background4.jpg",
-		"oF": 0,
-		"oIPL": 0,
-		"opt": 0,
-		"q": 100
-		},
-	"/img/background5.jpg": {
-		"ft": 16384,
-		"iS": 124319,
-		"jF": 0,
-		"oA": 0,
-		"oAP": "/img/background5.jpg",
-		"oF": 0,
-		"oIPL": 0,
-		"opt": 0,
-		"q": 100
-		},
-	"/img/background6.jpg": {
-		"ft": 16384,
-		"iS": 225635,
-		"jF": 0,
-		"oA": 0,
-		"oAP": "/img/background6.jpg",
-		"oF": 0,
-		"oIPL": 0,
-		"opt": 0,
-		"q": 100
-		},
-	"/img/background7.jpg": {
-		"ft": 16384,
-		"iS": 155624,
-		"jF": 0,
-		"oA": 0,
-		"oAP": "/img/background7.jpg",
-		"oF": 0,
-		"oIPL": 0,
-		"opt": 0,
-		"q": 100
-		},
-	"/img/bird.png": {
+	"/img/avatar.png": {
 		"ft": 32768,
-		"iS": 2062,
+		"iS": 3080,
 		"oA": 0,
-		"oAP": "/img/bird.png",
+		"oAP": "/img/avatar.png",
 		"oF": 0,
 		"oIPL": 0,
 		"opt": 0,
 		"oT": 1,
 		"q": 100
 		},
-	"/img/example-nina.png": {
+	"/img/star.png": {
 		"ft": 32768,
-		"iS": 56924,
+		"iS": 2227,
 		"oA": 0,
-		"oAP": "/img/example-nina.png",
-		"oF": 0,
-		"oIPL": 0,
-		"opt": 0,
-		"oT": 1,
-		"q": 100
-		},
-	"/img/example.png": {
-		"ft": 32768,
-		"iS": 41786,
-		"oA": 0,
-		"oAP": "/img/example.png",
+		"oAP": "/img/star.png",
 		"oF": 0,
 		"oIPL": 0,
 		"opt": 0,
@@ -814,6 +223,33 @@
 		"sC": 3,
 		"tS": 0
 		},
+	"/LICENSE": {
+		"cB": 0,
+		"ft": 8192,
+		"hM": 0,
+		"oA": 0,
+		"oAP": "/LICENSE",
+		"oF": 0
+		},
+	"/README.md": {
+		"cB": 0,
+		"cS": 0,
+		"eF": 1,
+		"eL": 1,
+		"ema": 1,
+		"eSQ": 1,
+		"ft": 4096,
+		"hM": 0,
+		"oA": 0,
+		"oAP": "/README.html",
+		"oF": 0,
+		"oFM": 0,
+		"oS": 0,
+		"pHT": 0,
+		"pME": 1,
+		"rFN": 0,
+		"uCM": 0
+		},
 	"/robots.txt": {
 		"cB": 0,
 		"ft": 8192,
@@ -821,556 +257,6 @@
 		"oA": 0,
 		"oAP": "/robots.txt",
 		"oF": 0
-		},
-	"/states/AK.png": {
-		"ft": 32768,
-		"iS": 4258,
-		"oA": 0,
-		"oAP": "/states/AK.png",
-		"oF": 0,
-		"oIPL": 1,
-		"opt": 1,
-		"oT": 1,
-		"q": 100
-		},
-	"/states/AL.png": {
-		"ft": 32768,
-		"iS": 883,
-		"oA": 0,
-		"oAP": "/states/AL.png",
-		"oF": 0,
-		"oIPL": 1,
-		"opt": 1,
-		"oT": 1,
-		"q": 100
-		},
-	"/states/AR.png": {
-		"ft": 32768,
-		"iS": 854,
-		"oA": 0,
-		"oAP": "/states/AR.png",
-		"oF": 0,
-		"oIPL": 1,
-		"opt": 1,
-		"oT": 1,
-		"q": 100
-		},
-	"/states/AZ.png": {
-		"ft": 32768,
-		"iS": 1648,
-		"oA": 0,
-		"oAP": "/states/AZ.png",
-		"oF": 0,
-		"oIPL": 1,
-		"opt": 1,
-		"oT": 1,
-		"q": 100
-		},
-	"/states/CA.png": {
-		"ft": 32768,
-		"iS": 3033,
-		"oA": 0,
-		"oAP": "/states/CA.png",
-		"oF": 0,
-		"oIPL": 1,
-		"opt": 1,
-		"oT": 1,
-		"q": 100
-		},
-	"/states/CO.png": {
-		"ft": 32768,
-		"iS": 953,
-		"oA": 0,
-		"oAP": "/states/CO.png",
-		"oF": 0,
-		"oIPL": 0,
-		"opt": 0,
-		"oT": 1,
-		"q": 100
-		},
-	"/states/CT.png": {
-		"ft": 32768,
-		"iS": 451,
-		"oA": 0,
-		"oAP": "/states/CT.png",
-		"oF": 0,
-		"oIPL": 1,
-		"opt": 1,
-		"oT": 1,
-		"q": 100
-		},
-	"/states/DE.png": {
-		"ft": 32768,
-		"iS": 408,
-		"oA": 0,
-		"oAP": "/states/DE.png",
-		"oF": 0,
-		"oIPL": 1,
-		"opt": 1,
-		"oT": 1,
-		"q": 100
-		},
-	"/states/FL.png": {
-		"ft": 32768,
-		"iS": 2131,
-		"oA": 0,
-		"oAP": "/states/FL.png",
-		"oF": 0,
-		"oIPL": 1,
-		"opt": 1,
-		"oT": 1,
-		"q": 100
-		},
-	"/states/GA.png": {
-		"ft": 32768,
-		"iS": 1379,
-		"oA": 0,
-		"oAP": "/states/GA.png",
-		"oF": 0,
-		"oIPL": 1,
-		"opt": 1,
-		"oT": 1,
-		"q": 100
-		},
-	"/states/HI.png": {
-		"ft": 32768,
-		"iS": 1500,
-		"oA": 0,
-		"oAP": "/states/HI.png",
-		"oF": 0,
-		"oIPL": 1,
-		"opt": 1,
-		"oT": 1,
-		"q": 100
-		},
-	"/states/IA.png": {
-		"ft": 32768,
-		"iS": 938,
-		"oA": 0,
-		"oAP": "/states/IA.png",
-		"oF": 0,
-		"oIPL": 1,
-		"opt": 1,
-		"oT": 1,
-		"q": 100
-		},
-	"/states/ID.png": {
-		"ft": 32768,
-		"iS": 1923,
-		"oA": 0,
-		"oAP": "/states/ID.png",
-		"oF": 0,
-		"oIPL": 1,
-		"opt": 1,
-		"oT": 1,
-		"q": 100
-		},
-	"/states/IL.png": {
-		"ft": 32768,
-		"iS": 1336,
-		"oA": 0,
-		"oAP": "/states/IL.png",
-		"oF": 0,
-		"oIPL": 1,
-		"opt": 1,
-		"oT": 1,
-		"q": 100
-		},
-	"/states/IN.png": {
-		"ft": 32768,
-		"iS": 879,
-		"oA": 0,
-		"oAP": "/states/IN.png",
-		"oF": 0,
-		"oIPL": 1,
-		"opt": 1,
-		"oT": 1,
-		"q": 100
-		},
-	"/states/KS.png": {
-		"ft": 32768,
-		"iS": 658,
-		"oA": 0,
-		"oAP": "/states/KS.png",
-		"oF": 0,
-		"oIPL": 1,
-		"opt": 1,
-		"oT": 1,
-		"q": 100
-		},
-	"/states/KY.png": {
-		"ft": 32768,
-		"iS": 1235,
-		"oA": 0,
-		"oAP": "/states/KY.png",
-		"oF": 0,
-		"oIPL": 1,
-		"opt": 1,
-		"oT": 1,
-		"q": 100
-		},
-	"/states/LA.png": {
-		"ft": 32768,
-		"iS": 1460,
-		"oA": 0,
-		"oAP": "/states/LA.png",
-		"oF": 0,
-		"oIPL": 1,
-		"opt": 1,
-		"oT": 1,
-		"q": 100
-		},
-	"/states/MA.png": {
-		"ft": 32768,
-		"iS": 695,
-		"oA": 0,
-		"oAP": "/states/MA.png",
-		"oF": 0,
-		"oIPL": 1,
-		"opt": 1,
-		"oT": 1,
-		"q": 100
-		},
-	"/states/MD.png": {
-		"ft": 32768,
-		"iS": 1175,
-		"oA": 0,
-		"oAP": "/states/MD.png",
-		"oF": 0,
-		"oIPL": 1,
-		"opt": 1,
-		"oT": 1,
-		"q": 100
-		},
-	"/states/ME.png": {
-		"ft": 32768,
-		"iS": 1352,
-		"oA": 0,
-		"oAP": "/states/ME.png",
-		"oF": 0,
-		"oIPL": 1,
-		"opt": 1,
-		"oT": 1,
-		"q": 100
-		},
-	"/states/MI.png": {
-		"ft": 32768,
-		"iS": 2269,
-		"oA": 0,
-		"oAP": "/states/MI.png",
-		"oF": 0,
-		"oIPL": 1,
-		"opt": 1,
-		"oT": 1,
-		"q": 100
-		},
-	"/states/MN.png": {
-		"ft": 32768,
-		"iS": 1595,
-		"oA": 0,
-		"oAP": "/states/MN.png",
-		"oF": 0,
-		"oIPL": 1,
-		"opt": 1,
-		"oT": 1,
-		"q": 100
-		},
-	"/states/MO.png": {
-		"ft": 32768,
-		"iS": 1211,
-		"oA": 0,
-		"oAP": "/states/MO.png",
-		"oF": 0,
-		"oIPL": 1,
-		"opt": 1,
-		"oT": 1,
-		"q": 100
-		},
-	"/states/MS.png": {
-		"ft": 32768,
-		"iS": 872,
-		"oA": 0,
-		"oAP": "/states/MS.png",
-		"oF": 0,
-		"oIPL": 1,
-		"opt": 1,
-		"oT": 1,
-		"q": 100
-		},
-	"/states/MT.png": {
-		"ft": 32768,
-		"iS": 1665,
-		"oA": 0,
-		"oAP": "/states/MT.png",
-		"oF": 0,
-		"oIPL": 1,
-		"opt": 1,
-		"oT": 1,
-		"q": 100
-		},
-	"/states/NC.png": {
-		"ft": 32768,
-		"iS": 1642,
-		"oA": 0,
-		"oAP": "/states/NC.png",
-		"oF": 0,
-		"oIPL": 1,
-		"opt": 1,
-		"oT": 1,
-		"q": 100
-		},
-	"/states/ND.png": {
-		"ft": 32768,
-		"iS": 775,
-		"oA": 0,
-		"oAP": "/states/ND.png",
-		"oF": 0,
-		"oIPL": 1,
-		"opt": 1,
-		"oT": 1,
-		"q": 100
-		},
-	"/states/NE.png": {
-		"ft": 32768,
-		"iS": 980,
-		"oA": 0,
-		"oAP": "/states/NE.png",
-		"oF": 0,
-		"oIPL": 1,
-		"opt": 1,
-		"oT": 1,
-		"q": 100
-		},
-	"/states/NH.png": {
-		"ft": 32768,
-		"iS": 650,
-		"oA": 0,
-		"oAP": "/states/NH.png",
-		"oF": 0,
-		"oIPL": 1,
-		"opt": 1,
-		"oT": 1,
-		"q": 100
-		},
-	"/states/NJ.png": {
-		"ft": 32768,
-		"iS": 660,
-		"oA": 0,
-		"oAP": "/states/NJ.png",
-		"oF": 0,
-		"oIPL": 1,
-		"opt": 1,
-		"oT": 1,
-		"q": 100
-		},
-	"/states/NM.png": {
-		"ft": 32768,
-		"iS": 987,
-		"oA": 0,
-		"oAP": "/states/NM.png",
-		"oF": 0,
-		"oIPL": 1,
-		"opt": 1,
-		"oT": 1,
-		"q": 100
-		},
-	"/states/NV.png": {
-		"ft": 32768,
-		"iS": 1801,
-		"oA": 0,
-		"oAP": "/states/NV.png",
-		"oF": 0,
-		"oIPL": 1,
-		"opt": 1,
-		"oT": 1,
-		"q": 100
-		},
-	"/states/NY.png": {
-		"ft": 32768,
-		"iS": 1584,
-		"oA": 0,
-		"oAP": "/states/NY.png",
-		"oF": 0,
-		"oIPL": 1,
-		"opt": 1,
-		"oT": 1,
-		"q": 100
-		},
-	"/states/OH.png": {
-		"ft": 32768,
-		"iS": 1108,
-		"oA": 0,
-		"oAP": "/states/OH.png",
-		"oF": 0,
-		"oIPL": 1,
-		"opt": 1,
-		"oT": 1,
-		"q": 100
-		},
-	"/states/OK.png": {
-		"ft": 32768,
-		"iS": 945,
-		"oA": 0,
-		"oAP": "/states/OK.png",
-		"oF": 0,
-		"oIPL": 1,
-		"opt": 1,
-		"oT": 1,
-		"q": 100
-		},
-	"/states/OR.png": {
-		"ft": 32768,
-		"iS": 1753,
-		"oA": 0,
-		"oAP": "/states/OR.png",
-		"oF": 0,
-		"oIPL": 1,
-		"opt": 1,
-		"oT": 1,
-		"q": 100
-		},
-	"/states/PA.png": {
-		"ft": 32768,
-		"iS": 968,
-		"oA": 0,
-		"oAP": "/states/PA.png",
-		"oF": 0,
-		"oIPL": 1,
-		"opt": 1,
-		"oT": 1,
-		"q": 100
-		},
-	"/states/RI.png": {
-		"ft": 32768,
-		"iS": 332,
-		"oA": 0,
-		"oAP": "/states/RI.png",
-		"oF": 0,
-		"oIPL": 1,
-		"opt": 1,
-		"oT": 1,
-		"q": 100
-		},
-	"/states/SC.png": {
-		"ft": 32768,
-		"iS": 1045,
-		"oA": 0,
-		"oAP": "/states/SC.png",
-		"oF": 0,
-		"oIPL": 1,
-		"opt": 1,
-		"oT": 1,
-		"q": 100
-		},
-	"/states/SD.png": {
-		"ft": 32768,
-		"iS": 940,
-		"oA": 0,
-		"oAP": "/states/SD.png",
-		"oF": 0,
-		"oIPL": 1,
-		"opt": 1,
-		"oT": 1,
-		"q": 100
-		},
-	"/states/TN.png": {
-		"ft": 32768,
-		"iS": 925,
-		"oA": 0,
-		"oAP": "/states/TN.png",
-		"oF": 0,
-		"oIPL": 1,
-		"opt": 1,
-		"oT": 1,
-		"q": 100
-		},
-	"/states/TX.png": {
-		"ft": 32768,
-		"iS": 3554,
-		"oA": 0,
-		"oAP": "/states/TX.png",
-		"oF": 0,
-		"oIPL": 1,
-		"opt": 1,
-		"oT": 1,
-		"q": 100
-		},
-	"/states/UT.png": {
-		"ft": 32768,
-		"iS": 1187,
-		"oA": 0,
-		"oAP": "/states/UT.png",
-		"oF": 0,
-		"oIPL": 1,
-		"opt": 1,
-		"oT": 1,
-		"q": 100
-		},
-	"/states/VA.png": {
-		"ft": 32768,
-		"iS": 1455,
-		"oA": 0,
-		"oAP": "/states/VA.png",
-		"oF": 0,
-		"oIPL": 1,
-		"opt": 1,
-		"oT": 1,
-		"q": 100
-		},
-	"/states/VT.png": {
-		"ft": 32768,
-		"iS": 586,
-		"oA": 0,
-		"oAP": "/states/VT.png",
-		"oF": 0,
-		"oIPL": 1,
-		"opt": 1,
-		"oT": 1,
-		"q": 100
-		},
-	"/states/WA.png": {
-		"ft": 32768,
-		"iS": 1773,
-		"oA": 0,
-		"oAP": "/states/WA.png",
-		"oF": 0,
-		"oIPL": 1,
-		"opt": 1,
-		"oT": 1,
-		"q": 100
-		},
-	"/states/WI.png": {
-		"ft": 32768,
-		"iS": 1273,
-		"oA": 0,
-		"oAP": "/states/WI.png",
-		"oF": 0,
-		"oIPL": 1,
-		"opt": 1,
-		"oT": 1,
-		"q": 100
-		},
-	"/states/WV.png": {
-		"ft": 32768,
-		"iS": 1248,
-		"oA": 0,
-		"oAP": "/states/WV.png",
-		"oF": 0,
-		"oIPL": 1,
-		"opt": 1,
-		"oT": 1,
-		"q": 100
-		},
-	"/states/WY.png": {
-		"ft": 32768,
-		"iS": 995,
-		"oA": 0,
-		"oAP": "/states/WY.png",
-		"oF": 0,
-		"oIPL": 0,
-		"opt": 0,
-		"oT": 1,
-		"q": 100
 		},
 	"/Website.sublime-project": {
 		"cB": 0,
@@ -1825,6 +711,7 @@
 			"flagValue": -1
 			}
 		},
+	"environmentVariablesString": "NODE_ENV:::production",
 	"esLintConfigFileHandlingType": 0,
 	"esLintECMAVersion": 7,
 	"esLintEnvironmentsMask": 1,
@@ -1929,6 +816,10 @@
 			"active": 0,
 			"optionString": ""
 			},
+		"default-param-last": {
+			"active": 0,
+			"optionString": ""
+			},
 		"dot-location": {
 			"active": 0,
 			"optionString": "'object'"
@@ -1980,6 +871,10 @@
 		"global-require": {
 			"active": 0,
 			"optionString": ""
+			},
+		"grouped-accessor-pairs": {
+			"active": 0,
+			"optionString": "'anyOrder'"
 			},
 		"guard-for-in": {
 			"active": 0,
@@ -2157,6 +1052,10 @@
 			"active": 1,
 			"optionString": "{'checkLoops': true}"
 			},
+		"no-constructor-return": {
+			"active": 0,
+			"optionString": ""
+			},
 		"no-continue": {
 			"active": 0,
 			"optionString": ""
@@ -2182,6 +1081,10 @@
 			"optionString": ""
 			},
 		"no-dupe-class-members": {
+			"active": 1,
+			"optionString": ""
+			},
+		"no-dupe-else-if": {
 			"active": 1,
 			"optionString": ""
 			},
@@ -2275,6 +1178,10 @@
 			},
 		"no-implied-eval": {
 			"active": 0,
+			"optionString": ""
+			},
+		"no-import-assign": {
+			"active": 1,
 			"optionString": ""
 			},
 		"no-inline-comments": {
@@ -2481,6 +1388,10 @@
 			"active": 0,
 			"optionString": ""
 			},
+		"no-setter-return": {
+			"active": 1,
+			"optionString": ""
+			},
 		"no-shadow": {
 			"active": 0,
 			"optionString": "{'builtinGlobals': false, 'hoist': 'functions', 'allow': []}"
@@ -2685,6 +1596,10 @@
 			"active": 0,
 			"optionString": "{'array': true, 'object': true}, {'enforceForRenamedProperties': false}"
 			},
+		"prefer-exponentiation-operator": {
+			"active": 0,
+			"optionString": ""
+			},
 		"prefer-named-capture-group": {
 			"active": 0,
 			"optionString": ""
@@ -2700,6 +1615,10 @@
 		"prefer-promise-reject-errors": {
 			"active": 0,
 			"optionString": "{'allowEmptyReject': false}"
+			},
+		"prefer-regex-literals": {
+			"active": 0,
+			"optionString": ""
 			},
 		"prefer-rest-params": {
 			"active": 0,
@@ -3309,7 +2228,6 @@
 		"autoOutputPathStyle": 0,
 		"createSourceMap": 1,
 		"enableJavascript": 0,
-		"ieCompatibility": 0,
 		"mathStyle": 0,
 		"outputStyle": 0,
 		"rewriteURLStyle": 0,
@@ -3378,13 +2296,13 @@
 		"autoOutputPathReplace1": "sass",
 		"autoOutputPathReplace2": "css",
 		"autoOutputPathStyle": 0,
+		"compilerType": 1,
 		"createSourceMap": 0,
-		"debugStyle": 0,
 		"decimalPrecision": 10,
+		"emitCharset": 1,
 		"outputStyle": 0,
 		"shouldRunAutoprefixer": 0,
-		"shouldRunBless": 0,
-		"useLibsass": 1
+		"shouldRunBless": 0
 		},
 	"languageDefaultsSLIM": {
 		"autoOutputAction": 0,
@@ -3449,6 +2367,9 @@
 	"npmTargetDependencyListType": 1,
 	"overrideExternalServerCSS": 0,
 	"previewPathAddition": "",
+	"rollupExternals": "",
+	"rollupReplacements": "process.env.NODE_ENV:::$NODE_ENV,,,ENVIRONMENT:::$NODE_ENV",
+	"rollupTreeshakingEnabled": 1,
 	"skippedFoldersString": "log, _logs, logs, _cache, cache, .idea, /storage/framework/sessions, node_modules",
 	"sourceFolderName": "source",
 	"susyVersion": 3,

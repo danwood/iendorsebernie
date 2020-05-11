@@ -1,17 +1,7 @@
 // globals!
 
-var endorseeInfo;	// dictionary - name, office, caucus
 var name;
-var job;
 var quotation;
-var volunteer;
-var doorknocking;
-var calling;
-var texting;
-var berning;
-var othervolunteering;
-var bgcolor;
-var background;
 var avatarImageSrc;
 var plural;
 
@@ -20,12 +10,6 @@ var imagesOK=0;
 var statePath = '';
 var candidatePath = '';
 
-
-var statesToAbbreviations = {
-	'Alabama': 'AL', 'Alaska': 'AK', 'Arizona': 'AZ', 'Arkansas': 'AR', 'California': 'CA', 'Colorado': 'CO', 'Connecticut': 'CT', 'Delaware': 'DE', 'Florida': 'FL', 'Georgia': 'GA', 'Hawaii': 'HI', 'Idaho': 'ID', 'Illinois': 'IL', 'Indiana': 'IN', 'Iowa': 'IA', 'Kansas': 'KS', 'Kentucky': 'KY', 'Louisiana': 'LA', 'Maine': 'ME', 'Maryland': 'MD', 'Massachusetts': 'MA', 'Michigan': 'MI', 'Minnesota': 'MN', 'Mississippi': 'MS', 'Missouri': 'MO', 'Montana': 'MT', 'Nebraska': 'NE', 'Nevada': 'NV', 'New Hampshire': 'NH', 'New Jersey': 'NJ', 'New Mexico': 'NM', 'New York': 'NY', 'North Carolina': 'NC', 'North Dakota': 'ND', 'Ohio': 'OH', 'Oklahoma': 'OK', 'Oregon': 'OR', 'Pennsylvania': 'PA', 'Rhode Island': 'RI', 'South Carolina': 'SC', 'South Dakota': 'SD', 'Tennessee': 'TN', 'Texas': 'TX', 'Utah': 'UT', 'Vermont': 'VT', 'Virginia': 'VA', 'Washington': 'WA', 'West Virginia': 'WV', 'Wisconsin': 'WI', 'Wyoming': 'WY'}
-
-
-
 // Load multiple images and draw when totally finished loading
 // https://stackoverflow.com/questions/33596638/loading-multiple-png-images-in-html5-canvas#answer-33601666
 
@@ -33,31 +17,8 @@ var statesToAbbreviations = {
 var imageURLs=[];  
 
 const AVATAR = 0
-const BACKGROUND = 1
-const BERNIE = 2
-const STATE = 3
-const CANDIDATE = 4
+const STARS = 1
 
-function generateVolunteerString() {
-
-	var result = ""
-	result += doorknocking ? '✅' : '◻️';
-	result += ' Knocking Doors  ';
-
-	result += calling ? '✅' : '◻️';
-	result += ' Calling  ';
-
-	result += texting ? '✅' : '◻️';
-	result += ' Texting  ';
-
-	result += berning ? '✅' : '◻️';
-	result += ' Networking with BERN app  ';
-
-	result += othervolunteering ? '✅' : '◻️';
-	result += ' More!';
-
-	return result;
-}
 
 // https://stackoverflow.com/a/53636623/25560
 const prepareFontLoad = (fontList) => Promise.all(fontList.map(font => document.fonts.load(font)));
@@ -66,29 +27,18 @@ const prepareFontLoad = (fontList) => Promise.all(fontList.map(font => document.
 
 async function startGeneratingImage() {
 
-	const fontList = ['700 60px Jubilat', '700 italic 60px Jubilat', '700 60px freight-sans-pro', '500 60px freight-sans-pro', ]
+	const fontList = ['900 60px Roboto', '300 60px Roboto', '500 60px playball' ]
 	await prepareFontLoad(fontList);
 
 	// the loaded images will be placed in imgs[]
 	imgs=[];
 
 	imageURLs=[];  
-	imageURLs.push(avatarImageSrc ? avatarImageSrc : "/img/bird.png");
+	imageURLs.push(avatarImageSrc ? avatarImageSrc : "/img/human.png");
 
 	imageURLs.push('/img/' + background);
-	imageURLs.push("/img/bird.png");
+	imageURLs.push("/img/stars.png");
 
-	statePath = '';
-	if (endorseeInfo.state !== undefined && endorseeInfo.state !== "") {
-		statePath = 'states/' + statesToAbbreviations[endorseeInfo.state] + '.png';
-		imageURLs.push(statePath);
-	}
-
-	candidatePath = '';
-	if (endorseeInfo.slug !== undefined && endorseeInfo.slug !== "") {
-		candidatePath = 'candidates/' + endorseeInfo.slug + '.jpg';
-		imageURLs.push(candidatePath);
-	}
 
 	imagesOK=0;
 	startLoadingAllImages(imagesAreNowLoaded);
@@ -245,33 +195,28 @@ function imagesAreNowLoaded(){
 	// ----------------------------------------------------- Name + Endorses ______
 
 	var endorses = (plural ? "endorse" : "endorses") + " ";
-	var endorseeName = endorseeInfo.name;
 
 	var fontSize = 112 * w/1000;
-	ctx.font = "700 " + String(fontSize) + "px Jubilat,monospace";
+	ctx.font = "700 " + String(fontSize) + "px Roboto,sans-serif";
 
 	var textWidth1 = ctx.measureText(name).width;
 
 
-	ctx.font = "700 italic " + String(fontSize) + "px Jubilat,monospace";
+	ctx.font = "700 italic " + String(fontSize) + "px Roboto,sans-serif";
 	var textWidth2a = ctx.measureText(endorses).width;
-	ctx.font = "700 " + String(fontSize) + "px Jubilat,monospace";
-	var textWidth2 = textWidth2a + ctx.measureText(endorseeName).width;
 
 
 
-	// Make sure user's and "endorses" + endorsee's name fits
+	// Make sure user's name fits
 
 	if (textWidth1 > w * 0.9 || textWidth2 > w*0.9) {
 		fontSize *= w*0.9/Math.max(textWidth1, textWidth2);
-		ctx.font = "700 " + String(fontSize) + "px Jubilat,monospace";
+		ctx.font = "700 " + String(fontSize) + "px Roboto,sans-serif";
 
 		// Recalc widths based on new size
 		textWidth1 = ctx.measureText(name).width;
-		ctx.font = "700 italic " + String(fontSize) + "px Jubilat,monospace";
+		ctx.font = "700 italic " + String(fontSize) + "px Roboto,sans-serif";
 		textWidth2a = ctx.measureText(endorses).width;
-		ctx.font = "700 " + String(fontSize) + "px Jubilat,monospace";
-		textWidth2 = textWidth2a + ctx.measureText(endorseeName).width;
 	}
 
 	var ascent = fontSize * 0.74;
@@ -294,79 +239,15 @@ function imagesAreNowLoaded(){
 	ctx.fillStyle = 'white';
 	ctx.fillRect(textX, y-ascent-extra, textWidth2, ascent+2*extra);  // background of entire width - endorses + name
 
-	ctx.font = "700 italic " + String(fontSize) + "px Jubilat,monospace";
+	ctx.font = "700 italic " + String(fontSize) + "px Roboto,sans-serif";
 
 	ctx.fillStyle = 'red';
 	ctx.fillText(endorses, textX, y, textWidth2a);
 
 	textX += textWidth2a;
-	ctx.font = "700 " + String(fontSize) + "px Jubilat,monospace";
-
-	textWidth2 = ctx.measureText(endorseeName).width
-
-	ctx.fillStyle = 'red';
-	ctx.fillText(endorseeName, textX, y, textWidth2);
+	ctx.font = "700 " + String(fontSize) + "px Roboto,sans-serif";
 
 
-
-	// Third & fourth lines (but not for Bernie)
-
-	if (endorseeName != "Bernie") {
-
-		extra = h * 0.003;
-		textX = w*0.40;
-
-		var officeText = "for " + endorseeInfo.officeText;
-		fontSize = 80 * h/1000;
-		ctx.font = "700 " + String(fontSize) + "px Jubilat,monospace";
-		textWidth3 = ctx.measureText(officeText).width
-
-		if (textWidth3 + textX > w * 0.9) {
-			fontSize *= w*0.5/textWidth3;
-			ctx.font = "700 " + String(fontSize) + "px Jubilat,monospace";
-
-			// Recalc width based on new size
-			textWidth3 = ctx.measureText(officeText).width;
-		}
-		ascent = fontSize * 0.74;
-		y = h*.67;
-
-		ctx.fillStyle = 'white';
-		ctx.fillRect(textX, y-ascent-extra, textWidth3, ascent+2*extra);
-
-		ctx.fillStyle = 'red';
-		ctx.fillText(officeText, textX, y, textWidth3);
-
-
-
-
-		var andBernieText = "& Bernie Sanders for President";
-
-		fontSize = 80 * h/1000;
-		ctx.font = "700 italic " + String(fontSize) + "px Jubilat,monospace";
-		var textWidth4 = ctx.measureText(andBernieText).width
-
-		if (textWidth4 + textX > w * 0.8) {
-			fontSize *= w*0.8/textWidth4;
-			ctx.font = "700 italic " + String(fontSize) + "px Jubilat,monospace";
-
-			// Recalc width based on new size
-			textWidth4 = ctx.measureText(andBernieText).width;
-		}
-
-		ascent = fontSize * 0.74;
-		y = h*.93;
-		textX = w*0.058
-
-
-		ctx.fillStyle = 'white';
-		ctx.fillRect(textX-extra, y-ascent-extra, textWidth4+2*extra, ascent+2*extra);
-
-		ctx.fillStyle = 'red';
-		ctx.fillText(andBernieText, textX, y, textWidth4);
-
-
-	}
 
 	// TODO - draw boxes THEN draw text.
 
@@ -374,9 +255,9 @@ function imagesAreNowLoaded(){
 
 	// ----------------------------------------------------- Quote Mark
 
-	ctx.font = "700 " + String(150 * h/1000) + "px Jubilat,monospace";
+	ctx.font = "700 " + String(150 * h/1000) + "px Roboto,sans-serif";
 	ctx.fillStyle = 'rgba(255,255,255,0.5)';
-	ctx.fillText("“", w*0.031, endorseeName != "Bernie" ? h*0.77 : h*0.75, w*0.9);
+	ctx.fillText("“", w*0.031, h*0.75, w*0.9);
 
 
 	// ----------------------------------------------------- Paragraph Text
@@ -393,7 +274,7 @@ function imagesAreNowLoaded(){
 	var endquote = volunteer ? "" : "”";
 	var left = w*.09;
 	var wid = w*.82;
-	var origY = endorseeName != "Bernie" ? h*0.72 : h*0.7;			// further down if Nina
+	var origY = h*0.7;			// further down if Nina
 	var size;
 	var volSize;
 
@@ -425,31 +306,11 @@ function imagesAreNowLoaded(){
 
 	var GENERATED_TEXT = "Generated at IENDORSEBERNIE.com";
 	var GENERATED_HASHTAG = " #IEndorseBernie"
-	var IM_VOLUNTEERING = endorseeName == "Bernie" ? "I’m volunteering for Bernie by:" :  "I’m volunteering for Bernie & " + endorseeName + " by:";
-	const VOL_URL = "berniesanders.com/volunteer";
 
 	ctx.fillStyle = "white";
 	y = origY;
 	ctx.font = "700 " + String(size * h/1000) + "px freight-sans-pro, monospace";
 	line = ctx.fillParaText(quotation+endquote, left, y, wid, setting);  // settings is remembered    
-	if (volunteer) {
-		ctx.font = "500 " + String(volSize * h/1000) + "px freight-sans-pro, monospace";
-		ctx.fillStyle = "rgba(255,255,255,0.7)";
-		y = line.nextLine + volSize*2;
-		ctx.fillText(IM_VOLUNTEERING, left, y, wid);
-
-		ctx.font = "500 " + String(volSize*.75 * h/1000) + "px freight-sans-pro, monospace";
-		ctx.fillStyle = "rgba(255,255,255,0.4)";
-		ctx.textAlign = "right"
-		ctx.fillText(VOL_URL, w*0.95, y, w*0.95);
-
-		ctx.font = "500 " + String(volSize * h/1000) + "px freight-sans-pro, monospace";
-		ctx.fillStyle = "rgba(255,255,255,0.7)";
-		ctx.textAlign = "left"
-		y += volSize * 2;
-		ctx.fillText(volunteerString, left, y, wid);
-
-	}
 
 
 
@@ -467,7 +328,7 @@ function imagesAreNowLoaded(){
 
 	ctx.font = "500 " + String(15 * h/1000) + "px freight-sans-pro, monospace";
 	ctx.fillStyle = 'RGBA(255,255,255,0.4';
-	ctx.fillText("Not affiliated with the Bernie 2020 campaign" + (endorseeName != "Bernie" ? " or other campaigns" : ""), w*0.051, h*0.98, w*0.9);
+	ctx.fillText("Not affiliated with the Bernie 2020 campaign", w*0.051, h*0.98, w*0.9);
 
 
 	var logoWidth = w*0.10;
