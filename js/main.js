@@ -154,8 +154,6 @@ function imagesAreNowLoaded(){
 
 	// ----------------------------------------------------- Name
 
-	name = "[YOUR NAME HERE]";
-
 	var fontSize = 50 * w/1000;
 	ctx.font = "900 " + String(fontSize) + "px Roboto,sans-serif";
 
@@ -283,21 +281,21 @@ function imagesAreNowLoaded(){
 
 	// ----------------------------------------------------- BOTTOM STUFF
 
-	var GENERATED_TEXT = "Generated at IENDORSEBERNIE.com";
-	var GENERATED_HASHTAG = " #IEndorseBernie"
+	var GENERATED_TEXT = "Generated at IEndorseEd.com";
+	var GENERATED_HASHTAG = " #StickingWithEd"
 
-	ctx.font = "500 " + String(20 * h/1000) + "px freight-sans-pro, monospace";
+	ctx.font = "500 " + String(20 * h/1000) + "px Roboto, sans-serif";
 	ctx.fillStyle = 'white';
 	ctx.fillText(GENERATED_TEXT, w*0.051, h*0.96, w*0.9);
 
 	var thatWidth = ctx.measureText(GENERATED_TEXT + "  ").width;
 	ctx.fillStyle = 'RGBA(255,255,255,0.6';
-	ctx.font = "700 " + String(20 * h/1000) + "px freight-sans-pro, monospace";
+	ctx.font = "700 " + String(20 * h/1000) + "px Roboto, sans-serif";
 	ctx.fillText(GENERATED_HASHTAG, w*0.051 + thatWidth, h*0.96, w*0.9);
 
-	ctx.font = "500 " + String(15 * h/1000) + "px freight-sans-pro, monospace";
+	ctx.font = "500 " + String(15 * h/1000) + "px Roboto, sans-serif";
 	ctx.fillStyle = 'RGBA(255,255,255,0.4';
-	ctx.fillText("Not affiliated with the Bernie 2020 campaign", w*0.051, h*0.98, w*0.9);
+	ctx.fillText("Disclaimer Disclaimer blah blah blah ginger", w*0.051, h*0.98, w*0.9);
 
 
 	var saveContainer = document.getElementById('saveContainer');

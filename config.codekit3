@@ -163,7 +163,7 @@
 		},
 	"/img/example.png": {
 		"ft": 32768,
-		"iS": 40439,
+		"iS": 35949,
 		"oA": 0,
 		"oAP": "/img/example.png",
 		"oF": 0,
@@ -177,6 +177,17 @@
 		"iS": 1406,
 		"oA": 0,
 		"oAP": "/img/openquote.png",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"oT": 1,
+		"q": 100
+		},
+	"/img/reference.png": {
+		"ft": 32768,
+		"iS": 40439,
+		"oA": 0,
+		"oAP": "/img/reference.png",
 		"oF": 0,
 		"oIPL": 0,
 		"opt": 0,
