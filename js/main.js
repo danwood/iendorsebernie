@@ -17,7 +17,9 @@ var candidatePath = '';
 var imageURLs=[];  
 
 const AVATAR = 0
-const STARS = 1
+const STAR = 1
+const OPENQUOTE = 2
+const EXAMPLE = 3
 
 
 // https://stackoverflow.com/a/53636623/25560
@@ -34,10 +36,10 @@ async function startGeneratingImage() {
 	imgs=[];
 
 	imageURLs=[];  
-	imageURLs.push(avatarImageSrc ? avatarImageSrc : "/img/human.png");
-
-	imageURLs.push('/img/' + background);
-	imageURLs.push("/img/stars.png");
+	imageURLs.push(avatarImageSrc ? avatarImageSrc : "/img/avatar.png");
+	imageURLs.push("/img/star.png");
+	imageURLs.push("/img/openquote.png");
+	imageURLs.push("/img/example.png");
 
 
 	imagesOK=0;
@@ -87,65 +89,34 @@ function imagesAreNowLoaded(){
 
 	// Background Color
 
-	ctx.fillStyle = bgcolor;
+	var exampleImage = imgs[EXAMPLE];
+	ctx.drawImage(exampleImage, 0,0,w,h);
+
+	ctx.fillStyle = 'rgb(36, 87, 145)';
 	ctx.fillRect(0, 0, w, h);
 
-	// ----------------------------------------------------- Background Image - width is twice height
-
-		ctx.globalAlpha = 0.4;
-		ctx.drawImage(imgs[BACKGROUND], 0, 0, w, h/2);
-		ctx.globalAlpha = 1.0;
+	ctx.fillStyle = 'white';
+	ctx.fillRect(w*.55, 0, w*.45, h*.56);
 
 
-	// ----------------------------------------------------- State outline
-
-		if (statePath != '') {
-			var img = imgs[STATE];
-			var aspectRatio = img.naturalWidth / img.naturalHeight;
-			ctx.drawImage(imgs[STATE], w*0.5, h*0.4, w*.30*aspectRatio, h*.30);
-		}
-
-
-		if (candidatePath != '') {
-			var img = imgs[CANDIDATE];
-			var aspectRatio = img.naturalWidth / img.naturalHeight;
-			var angleInRadians = 0.26;
-			ctx.rotate(angleInRadians);
-			ctx.drawImage(imgs[CANDIDATE], w*.9, h*.2, w*.15*aspectRatio, h*.15);
-			ctx.rotate(-angleInRadians);
-
-		}
-
-
-	// ----------------------------------------------------- Background Image - width is twice height
-
-		if (background.includes('-')) {
-
-			ctx.font = "500 " + String(20 * h/1000) + "px freight-sans-pro, monospace";
-			ctx.textAlign = "right"
-
-			var link = background.replace('background-', 'https://flic.kr/p/');
-			link = link.replace('.jpg', '');
-
-			ctx.fillStyle = 'rgba(255,255,255,0.3)';
-
-			ctx.fillText(link, w*.99, h*0.02, w*.90);
-		}
+	ctx.globalAlpha = 1.0;
 
 
 
-	// ----------------------------------------------------- Avatar + Circle
+	// ----------------------------------------------------- Avatar
 
-	var centerX = w * 0.25;
-	var centerY = h * 0.22;
+	var centerX = w * 0.775;
+	var centerY = h * 0.275;
 	var radius = w * 0.19;
 
 	// Save the state, so we can undo the clipping
 	ctx.save();
 
-	// Create a circle
+
+	// Create a square
 	ctx.beginPath();
-	ctx.arc(centerX, centerY, radius, 0, 2 * Math.PI, false);
+
+	ctx.rect(centerX-radius, centerY-radius, radius*2, radius*2);
 
 	// Clip to the current path
 	ctx.clip();
@@ -154,6 +125,7 @@ function imagesAreNowLoaded(){
 	var imageWidth = image.naturalWidth;
 	var imageHeight = image.naturalHeight;
 	var aspect = imageWidth / imageHeight;
+
 
 	if (aspect > 1.0) {
 
@@ -171,93 +143,100 @@ function imagesAreNowLoaded(){
 	ctx.restore();
 
 
-	ctx.beginPath();
-	ctx.arc(centerX, centerY, radius, 0, 2 * Math.PI, false);
-	ctx.lineWidth = w * 0.015;
-	ctx.strokeStyle = 'white';
-	ctx.stroke();
+	// ----------------------------------------------------- Stars
 
-	// ----------------------------------------------------- Job Title
-
-	ctx.font = "700 " + String(30 * h/1000) + "px freight-sans-pro, monospace";
-	ctx.textAlign = "left"
-
-	var textWidth = ctx.measureText(job+ " ").width;
-	var textX = w*0.051
-
-	ctx.fillStyle = 'black';
-	ctx.fillRect(0, h*0.39, textX+textWidth, h*0.036)
-
-	ctx.fillStyle = 'white';
-
-	ctx.fillText(job, textX, h*0.415, w*0.9);
-
-	// ----------------------------------------------------- Name + Endorses ______
-
-	var endorses = (plural ? "endorse" : "endorses") + " ";
-
-	var fontSize = 112 * w/1000;
-	ctx.font = "700 " + String(fontSize) + "px Roboto,sans-serif";
-
-	var textWidth1 = ctx.measureText(name).width;
+	image = imgs[STAR];
+	for (var i = 2; i >= 0; i--) {
+		ctx.drawImage(image, w*.10+i*w*.13, h*.055, w*.10, h*.10);
+	}
 
 
-	ctx.font = "700 italic " + String(fontSize) + "px Roboto,sans-serif";
-	var textWidth2a = ctx.measureText(endorses).width;
+
+	// ----------------------------------------------------- Name
+
+	name = "[YOUR NAME HERE]";
+
+	var fontSize = 50 * w/1000;
+	ctx.font = "900 " + String(fontSize) + "px Roboto,sans-serif";
+
+	var textWidth = ctx.measureText(name).width;
+	var textHeight = ctx.measureText(name).actualBoundingBoxDescent + ctx.measureText(name).actualBoundingBoxAscent;
 
 
 
 	// Make sure user's name fits
 
-	if (textWidth1 > w * 0.9 || textWidth2 > w*0.9) {
-		fontSize *= w*0.9/Math.max(textWidth1, textWidth2);
-		ctx.font = "700 " + String(fontSize) + "px Roboto,sans-serif";
-
-		// Recalc widths based on new size
-		textWidth1 = ctx.measureText(name).width;
-		ctx.font = "700 italic " + String(fontSize) + "px Roboto,sans-serif";
-		textWidth2a = ctx.measureText(endorses).width;
+	if (textWidth > w * 0.5 ) {
+		fontSize *= w*0.5/textWidth;
+		ctx.font = "900 " + String(fontSize) + "px Roboto,sans-serif";
+		textWidth = ctx.measureText(name).width;
+		textHeight = ctx.measureText(name).actualBoundingBoxDescent + ctx.measureText(name).actualBoundingBoxAscent;
 	}
 
-	var ascent = fontSize * 0.74;
-	var extra = h * 0.005;
 
-	var y = h*0.52;
-	textX = w*0.058
+	var y = h*0.27;
+	textXCenter = w*0.275;
 
 	ctx.fillStyle = 'white';
-	ctx.fillRect(textX, y-ascent-extra, textWidth1, ascent+2*extra);
+	ctx.fillRect(0,y-textHeight-h*.02, w*.55, textHeight+h*.05);
 
-	ctx.fillStyle = 'red';
-	ctx.fillText(name, textX, y, textWidth1);
-
-
+	ctx.fillStyle = 'rgb(236, 71, 61)';		// red
+	ctx.fillText(name, textXCenter-textWidth/2, y, textWidth);
 
 
-	y = h*0.62;
+	// ----------------------------------------------------- Endorses, for re-election, ED Markey
 
+
+	y = h*0.39;
+	fontSize = 66 * w/1000;
+
+
+	var endorses = (plural ? "endorse" : "endorses") + " ";
+
+	ctx.font = "500 " + String(fontSize) + "px Playball,serif";
+
+	textWidth = ctx.measureText(endorses).width;
 	ctx.fillStyle = 'white';
-	ctx.fillRect(textX, y-ascent-extra, textWidth2, ascent+2*extra);  // background of entire width - endorses + name
-
-	ctx.font = "700 italic " + String(fontSize) + "px Roboto,sans-serif";
-
-	ctx.fillStyle = 'red';
-	ctx.fillText(endorses, textX, y, textWidth2a);
-
-	textX += textWidth2a;
-	ctx.font = "700 " + String(fontSize) + "px Roboto,sans-serif";
+	ctx.fillText(endorses, textXCenter-textWidth/2, y, textWidth);
 
 
+	y = h*0.56;
+	var reelection = 'for re-election';
 
-	// TODO - draw boxes THEN draw text.
+	textWidth = ctx.measureText(reelection).width;
+	ctx.fillText(reelection, textXCenter-textWidth/2, y, textWidth);
 
 
+	fontSize = 80 * w/1000;
+	ctx.font = "900 " + String(fontSize) + "px Roboto,sans-serif";
+	var edmarkey = 'ED MARKEY';
+	textWidth = ctx.measureText(edmarkey).width;
+	y = h*0.49;
+	ctx.fillText(edmarkey, textXCenter-textWidth/2, y, textWidth);
+
+
+	// ----------------------------------------------------- BOX
+
+	ctx.fillStyle = 'rgb(236, 71, 61)';		// red
+	x = w * 0.08;
+	ctx.fillRect(x, h*0.63, w-x, h*.26);
 
 	// ----------------------------------------------------- Quote Mark
 
-	ctx.font = "700 " + String(150 * h/1000) + "px Roboto,sans-serif";
-	ctx.fillStyle = 'rgba(255,255,255,0.5)';
-	ctx.fillText("“", w*0.031, h*0.75, w*0.9);
+	image = imgs[OPENQUOTE];
+	imageWidth = image.naturalWidth;
+	imageHeight = image.naturalHeight;
+	aspect = imageWidth / imageHeight;
+
+	x = w*0.12;
+	y = h*0.65;
+	radius = w*0.05
+
+	ctx.globalAlpha = 0.5;
+	ctx.drawImage(image, x-radius, y-(radius/aspect), radius*2,(radius/aspect)*2);
+	ctx.globalAlpha = 1.0;
+
+
 
 
 	// ----------------------------------------------------- Paragraph Text
@@ -271,51 +250,41 @@ function imagesAreNowLoaded(){
 	ctx.textAlign = "left";
 	ctx.fillStyle = "transparent";
 
-	var endquote = volunteer ? "" : "”";
-	var left = w*.09;
-	var wid = w*.82;
+	var endquote = "”";
+	var left = w*.12;
+	var wid = w*.85;
 	var origY = h*0.7;			// further down if Nina
 	var size;
-	var volSize;
 
-	var volunteerString = generateVolunteerString();
-
-	for(size = 50 ; size > 15 ; size -= 1) {
+	for(size = 200 ; size > 15 ; size -= 1) {
 
 		y = origY;
-		ctx.font = "700 " + String(size * h/1000) + "px freight-sans-pro, monospace";
+		ctx.font = "300 " + String(size * h/1000) + "px Roboto, sans-serif";
 
 		// Draw paragraph
 		var line = ctx.fillParaText(quotation+endquote, left, y, wid, setting);  // settings is remembered    
 
-	// Volunteer paragraph
+		y = line.nextLine;
 
-		if (volunteer) {
-			volSize = Math.min(size, 25);
-			y = line.nextLine + volSize*2;
-			y += volSize * 2;					// Two additional lines
-		}
-		else {
-			y = line.nextLine;
-		}
 		if (y < h * 0.90) {
 			break;  // it fits, so really draw now.
 		}
 	}
 
 
-	var GENERATED_TEXT = "Generated at IENDORSEBERNIE.com";
-	var GENERATED_HASHTAG = " #IEndorseBernie"
 
 	ctx.fillStyle = "white";
 	y = origY;
-	ctx.font = "700 " + String(size * h/1000) + "px freight-sans-pro, monospace";
+	ctx.font = "300 " + String(size * h/1000) + "px Roboto, sans-serif";
 	line = ctx.fillParaText(quotation+endquote, left, y, wid, setting);  // settings is remembered    
 
 
 
 
 	// ----------------------------------------------------- BOTTOM STUFF
+
+	var GENERATED_TEXT = "Generated at IENDORSEBERNIE.com";
+	var GENERATED_HASHTAG = " #IEndorseBernie"
 
 	ctx.font = "500 " + String(20 * h/1000) + "px freight-sans-pro, monospace";
 	ctx.fillStyle = 'white';
@@ -330,9 +299,6 @@ function imagesAreNowLoaded(){
 	ctx.fillStyle = 'RGBA(255,255,255,0.4';
 	ctx.fillText("Not affiliated with the Bernie 2020 campaign", w*0.051, h*0.98, w*0.9);
 
-
-	var logoWidth = w*0.10;
-	ctx.drawImage(imgs[BERNIE], w*0.88, h*0.90, logoWidth, logoWidth*299/400);
 
 	var saveContainer = document.getElementById('saveContainer');
 	saveContainer.style.display = 'block';		// reveal all!

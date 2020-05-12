@@ -60,13 +60,13 @@ if (isset($_SERVER['HTTP_USER_AGENT'])) {
                     <input id="uploadAvatar" type="file" value="upload image" onchange="readURL(this);">
                   </label>
                 </div>
-                <div>
+                <div><?php if (housekeeping::isGet('test')) { ?><input type="hidden" id="test-input" value="1" name="test" /> <?php } ?>
                   <input id="generate" type="submit" value="Generate image">
                 </div>
               </form><?php } ?>
             </div>
             <div class="ksbox half" id="canvasContainer">
-              <canvas id="canvas" width="1600" height="1600" style="max-width:100%; display:none"></canvas><img id="canvasImg" src="img/example.png">
+              <canvas id="canvas" width="1600" height="1280" style="max-width:100%; display:none"></canvas><img id="canvasImg" src="img/example.png">
               <div id="saveContainer" style="display:none">
                 <p>
                   Image has been generated! Feel free to adjust it to your liking.
@@ -118,7 +118,7 @@ if (isset($_SERVER['HTTP_USER_AGENT'])) {
     	if (name.length < 4 || quotation.length < 30) {
     		alert("Please fill in all of the blanks with enough information!");
     	}
-    	else if (avatarImageSrc === undefined) {
+    	else if (avatarImageSrc === undefined && $('#test-input').val() != 1) {
     		alert("You need to upload your image!");
     	}
     	else {

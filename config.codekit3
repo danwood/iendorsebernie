@@ -161,6 +161,28 @@
 		"oT": 1,
 		"q": 100
 		},
+	"/img/example.png": {
+		"ft": 32768,
+		"iS": 40439,
+		"oA": 0,
+		"oAP": "/img/example.png",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"oT": 1,
+		"q": 100
+		},
+	"/img/openquote.png": {
+		"ft": 32768,
+		"iS": 1406,
+		"oA": 0,
+		"oAP": "/img/openquote.png",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"oT": 1,
+		"q": 100
+		},
 	"/img/star.png": {
 		"ft": 32768,
 		"iS": 2227,
