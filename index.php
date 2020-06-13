@@ -171,6 +171,7 @@ if (isset($_SERVER['HTTP_USER_AGENT'])) {
   <script src="https://code.jquery.com/jquery-3.4.1.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
   <script>window.jQuery || document.write('<script src="js/vendor/jquery-3.4.1.min.js"><\\/script>')</script>
   <script src="js/plugins.js"></script>
+  <script src="js/exif.js"></script>
   <script src="js/main.js"></script>
   <script>
     document.documentElement.className = document.documentElement.className.replace("no-js","js");
@@ -244,9 +245,54 @@ if (isset($_SERVER['HTTP_USER_AGENT'])) {
     		var reader = new FileReader();
     
     		reader.onload = function (e) {
-    			$("#avatarImage").attr('src', e.target.result);
+    
+    			// After we get a URL to choose, get its EXIF data
+    			// https://stackoverflow.com/a/37750456/25560
+    
+    			EXIF.getData(input.files[0], function () {
+    				var orientation = EXIF.getTag(this,"Orientation");
+    				var can = document.createElement("canvas");
+    				var ctx = can.getContext('2d');
+    				var thisImage = new Image;
+    				thisImage.onload = function() {
+    					can.width  = thisImage.width;
+    					can.height = thisImage.height;
+    					ctx.save();
+    					var width  = can.width;  var styleWidth  = can.style.width;
+    					var height = can.height; var styleHeight = can.style.height;
+    					if (orientation) {
+    						if (orientation > 4) {
+    							can.width  = height; can.style.width  = styleHeight;
+    							can.height = width;  can.style.height = styleWidth;
+    						}
+    						switch (orientation) {
+    							case 2: ctx.translate(width, 0);     ctx.scale(-1,1); break;
+    							case 3: ctx.translate(width,height); ctx.rotate(Math.PI); break;
+    							case 4: ctx.translate(0,height);     ctx.scale(1,-1); break;
+    							case 5: ctx.rotate(0.5 * Math.PI);   ctx.scale(1,-1); break;
+    							case 6: ctx.rotate(0.5 * Math.PI);   ctx.translate(0,-height); break;
+    							case 7: ctx.rotate(0.5 * Math.PI);   ctx.translate(width,-height); ctx.scale(-1,1); break;
+    							case 8: ctx.rotate(-0.5 * Math.PI);  ctx.translate(-width,0); break;
+    						}
+    					}
+    
+    					ctx.drawImage(thisImage,0,0);
+    					ctx.restore();
+    					var dataURL = can.toDataURL();
+    
+    					// at this point you can save the image away to your back-end using 'dataURL'
+    
+    					$("#avatarImage").attr('src', dataURL);
+    
+    				}
+    
+    				// now trigger the onload function by setting the src to your HTML5 file object (called 'file' here)
+    				thisImage.src = URL.createObjectURL(input.files[0]);
+    			});
+    
     		}
     
+    		// The readAsDataURL method is used to read the contents of the specified Blob or File. When the read operation is finished, the readyState becomes DONE, and the loadend is triggered. At that time, the result attribute contains the data as a data: URL representing the file's data as a base64 encoded string.
     		reader.readAsDataURL(input.files[0]);
     	}
     }
@@ -268,7 +314,7 @@ if (isset($_SERVER['HTTP_USER_AGENT'])) {
     					$prevState = $state;
     				}
     		}
-    	   }
+    		 }
     	fclose($handle);
     
     	foreach ($states as $state) { echo "'$state', "; }
