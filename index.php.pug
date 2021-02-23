@@ -1,42 +1,31 @@
 <?php
 |
-|require_once('classes/class.housekeeping.php'); 
-|
-|$browser = '';
-|if (isset($_SERVER['HTTP_USER_AGENT'])) {
-|    $agent = $_SERVER['HTTP_USER_AGENT'];
-|	if (strlen(strstr($agent, 'Firefox')) > 0) {
-|	    $browser = 'firefox';
-|	}
-|}
+|require_once('classes/class.housekeeping.php');
 |?>
 doctype html
 html.no-js(lang='en-us')
 	head
 		meta(charset='utf-8')
 		<!--[if IE]><meta http-equiv='X-UA-Compatible' content='IE=edge'><![endif]-->
-		title I Endorse Bernie
-		meta(name='description' content='Generate your own Bernie Sanders endorsement graphic, and more!')
+		title I Endorse Nina Turner for Congress - Generate your own endorsement graphic & avatar
+		link(rel="prefetch" href="//code.jquery.com")
+		meta(name='description' content='Generate your own Nina Turner endorsement graphic & avatar')
 		meta(name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover")
 		meta(name="supported-color-schemes" content="light dark")
-		link(rel='apple-touch-icon' href='icon.png')
+		<link rel="preconnect" href="https://fonts.gstatic.com"> 
+		<link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,400;0,800;1,400&display=swap" rel="stylesheet">
 		link(rel='stylesheet' href='css/normalize.css')
 		link(rel='stylesheet' href='css/main.css')
-		meta(name='theme-color' content='#fafafa')
 
 		//- REMINDER: DASH AFTER SLASH-SLASH HIDES COMMENTS FROM PUG COMPILER
-
-		//- Adobe Fonts - TypeKit. Using fonts:
-		//- 700 Jubilat regular & Italic
-		//- 500, 700 Freight Sans
-		//- 400 freight-sans-condensed-pro
-		link(rel='stylesheet' href='https://use.typekit.net/hqc5idp.css')
 
 	body
 		header
 			section: article.textual
-				h1 I Endorse Bernie
-				p Create your own endorsement graphic for Bernie and other progressive candidates to share over Instagram, Twitter, Facebook, emails, and so forth!
+				h1
+					include nina.svg
+				aside Generate images for social media to show your support!
+
 
 		<!--[if lt IE 9]>
 			p.browserupgrade
@@ -45,365 +34,233 @@ html.no-js(lang='en-us')
 				a(href="http://browsehappy.com/") upgrade your browser
 				|  to improve your experience.
 		<![endif]-->
-		main.requires-js
+		main
 
 			section: article.textual
+				p Our Revolution supports Nina Turner — now you can show that you support her as well! Nina is running for congress in Ohio's 11th district to replace the seat to be vacated by Marica L. Fudge. Let's do everything we can to send this progressive champion to Washington!
 
-				.group
-					.ksbox.half
+				p Fill in the info, upload your photo, and generate your images to share on Instagram, Facebook, and Twitter. Be sure to use the hashtag <b>#IEndorseNina</b>!
 
-						<?php if ($browser == 'firefox') { ?>
-						p.
-							Terribly sorry, but this doesn't work very well on the Firefox browser. Please try using another browser.
-						<?php } else { ?>
-						form
-							div: label
-								| Name
-								input#name-input(type='text', maxlength="30" value!="<?php echo htmlspecialchars(housekeeping::get('name')); ?>")
+				.flexbox
+					.ksflex.half
+
+						form.generator
 
 							div: label
-								<input id="plural" type="checkbox" <?php housekeeping::checkedIf(housekeeping::isGet('plural')); ?>>
-								| Plural names
+								| First Name
+							input#firstname-input(type='text', maxlength="18" value!="<?php echo htmlspecialchars(housekeeping::get('firstname')); ?>")
+							
 							div: label
-								| Job Title, Location
-								input#job-input(type='text', maxlength="80" , value!="<?php echo htmlspecialchars(housekeeping::get('job')); ?>")
-
-							div: label
-								| Whom are you endorsing?
-								select#endorse-top(name="endorse-top")
-									option(value="Bernie") Bernie Sanders
-									option(value="Nina") Nina Turner for VP
-									option(disabled) -
-								select#endorse-sub(name="endorse-sub")
-
-							div &nbsp;&nbsp;&nbsp;🌹 = member of the <a href="https://www.rosecaucus.com">Rose Caucus</a> <a style="font-style:italic;" href="https://twitter.com/rosecaucus">@rosecaucus</a>
-							div &nbsp;&nbsp;&nbsp;🖼 = candidate photo available here
-
-
+								| Last Name
+							input#lastname-input(type='text', maxlength="30" value!="<?php echo htmlspecialchars(housekeeping::get('lastname')); ?>")
 
 							div: label
-								| Why you endorse this candidate (1 short paragraph)
-								textarea#quotation(rows="6")
-									<?php echo htmlspecialchars(housekeeping::get('quotation')); ?>
+								| Where do you live?
+							input#where-input(type='text', maxlength="50" value!="<?php echo htmlspecialchars(housekeeping::get('where')); ?>")
 
 							div: label
-								img#avatarImage(style='display:none')
+								| Square Image Variant …
+							<?php
+							|	$variant = housekeeping::get('v');
+							|	for($i = 1 ; $i <= 7 ; $i++) {
+							|		echo('<label>');			
+							|		echo('<input type="radio" name="variant" value="' . $i . '" ');
+							|		echo housekeeping::checkedIf($i == $variant || ('' == $variant && $i == 1));
+							|		echo ' />';
+							|		echo '<img class="background-thumbnail" src="img/thumb/square-thumb' . $i . '.jpg" />';
+							|		echo '</label>';
+							|	}
+							|?>
+
+							div: label
+								| Why are you endorsing her? Pick something here …
+							select#reason-select(name="reason", style="width:100%")
+								option(value="") --- Some suggestions ---
+								option(value="1")  She’s not afraid of a righteous fight!
+								option(value="2")  She speaks the truth, is fierce and loving.
+								option(value="3")  Nina Turner has no patience for half measures!
+								option(value="4")  I trust her 100%. She speaks from heart and mind.
+								option(value="5")  We need another member of ‘the squad’ in Congress!
+								option(value="6")  Nina Turner is the leading revolutionary spirit of our time.
+								option(value="7")  She’ll fight to dismantle our racist Criminal Justice System.
+								option(value="8")  Nina has the political will, determination and imagination we need.
+								option(value="9")  Nina considers herself a ‘hellraising humanitarian.’ Hello Somebody!
+								option(value="10") Nina will always fight for the people with 100% passion and commitment.
+								option(value="11") Nina Turner has the qualities we desperately need in our leaders right now.
+								option(value="12") She could spend as much time in congress as Bernie and remain uncorrupted.
+								option(value="13") The people of Ohio District 11 deserve a government that works for everybody.
+								option(value="14") She’ll work to pass a People’s Stimulus because our people need it for survival!
+								option(value="15") Nina Turner is willing to speak up for the regular people when so many others won’t.
+								option(value="16") Ohio and the entire country need Nina’s passion and voice to fight for ordinary people.
+								option(value="17") I support Nina because she isn’t afraid to take on powers that be and fight for the people
+								option(value="18") She will not equivocate on issues like Medicare For All, Criminal Justice Reform and a Green New Deal.
+								option(value="19") Nina will fight for A Green New Deal, Medicare For All, Criminal Justice Reform, and Ending Corporate Greed.
+								option(value="20") Hello somebody! It’s time to elect leaders with the backbone to stand for those of us that are not millionaires or billionaires!
+								option(value="21") She is for the working class and ‘the almost middle class’ and includes those in our communities who cannot fend for themselves.
+								option(value="22") Her solutions to the major problems that we have in this country are crystal clear. She deserves a National platform in order to implement her proposals.
+								option(value="23") We need a true progressive voice in Washington DC that is willing to fight for the 99% and stand with Senator Sanders even when it's not popular within the Democratic establishment.
+								option(value="24") Nina understands we can never go ‘back to normal.’ Normal gave us a knee on George Floyd’s neck. Normal means 40% of us can’t afford a $400 emergency. Normal means 44 million Americans having their dreams crushed by student debt.
+								option(value="25") Congress needs elected officials who aren't afraid to fight for a better quality of life for all Americans. Nina Turner has proven that she is a warrior we can trust, regardless of geographic location or any of the things that tend to divide us.
+								option(value="26") I am supporting Nina because our government has sold ‘We the People’ out. They ignore our needs while, at the same time are being bribed to transfer billions to their wealthy donors. They get rich while we lose everything. Nina will fight to change that!
+							div: label
+								| … Or, write your own personal message
+							textarea#freeform-text(name="freeform")
+							p.small: i Suggestion: include your message when you share your image, along with <b>#IEndorseNina</b>
+
+							div: label
+								.hidden-ios
+									img#avatarImage(src='img/avatar.png')
 								| Photo of you
-								input#uploadAvatar(type='file' value='upload image' onchange='readURL(this);')
-
-							div#vol-label: label
-								<input id="volunteer" type="checkbox" <?php housekeeping::checkedIf(housekeeping::isGet('volunteer')); ?>>
-								| Show Volunteer Checkboxes (Bernie only)
-							div#vol-checkboxes(style="padding-left:2em")
-								label
-									<input id="doorknocking" type="checkbox" <?php housekeeping::checkedIf(housekeeping::isGet('doorknocking')); ?>>
-									| Knocking Doors
-								label
-									<input id="calling" type="checkbox" <?php housekeeping::checkedIf(housekeeping::isGet('calling')); ?>>
-									| Calling
-								label
-									<input id="texting" type="checkbox" <?php housekeeping::checkedIf(housekeeping::isGet('texting')); ?>>
-									| Texting
-								br
-								label
-									<input id="BERNing" type="checkbox" <?php housekeeping::checkedIf(housekeeping::isGet('berning')); ?>>
-									| Networking with BERN app
-								label
-									<input id="other-volunteering" type="checkbox" <?php housekeeping::checkedIf(housekeeping::isGet('othervolunteering')); ?>>
-									| More
-							div.background-colors(style="padding-top:1em;")
-								<?php
-								|	$unspecifiedFound = false;
-								|	$specifiedColor = housekeeping::get('color');
-								|	$colors = Array('hsl(202, 85%, 31%)', 'hsl(222, 85%, 40%)', 'hsl(255, 85%, 50%)', 'hsl(0, 85%, 31%)',
-								|					'hsl(20, 85%, 31%)', 'hsl(40, 85%, 31%)', 'hsl(80, 85%, 31%)',
-								|					'hsl(140, 85%, 31%)', 'hsl(180, 85%, 31%)', 'hsl(0, 0%, 31%)' );
-								|	foreach($colors as $color) {
-								|		echo('<label>');			
-								|		echo('<input type="radio" name="color" value="');
-								|		echo htmlspecialchars($color);
-								|		echo '" ';
-								|		echo housekeeping::checkedIf($color == $specifiedColor || !$unspecifiedFound && '' == $specifiedColor);
-								|		$unspecifiedFound = true;
-								|		echo ' />';
-								|		echo '<span class="swatch" style="background-color:';
-								|		echo htmlspecialchars($color);
-								|		echo '">&nbsp;</span>';
-								|		echo '</label>';
-								|	}
-								|?>
-
-							div.background-images
-								<?php
-								|	$unspecifiedFound = false;
-								|	$specifiedBackground = housekeeping::get('background');
-								|	$backgrounds = Array('background1.jpg', 'background2.jpg', 'background3.jpg', 'background4.jpg', 'background5.jpg', 'background-2gupHso.jpg', 'background-2guprGE.jpg', 'background-x8WUsc.jpg', 'background6.jpg', 'background7.jpg' );
-								|	foreach($backgrounds as $background) {
-								|		echo('<label>');			
-								|		echo('<input type="radio" name="background" value="');
-								|		echo htmlspecialchars($background);
-								|		echo '" ';
-								|		echo housekeeping::checkedIf($background == $specifiedBackground || !$unspecifiedFound && '' == $specifiedBackground);
-								|		$unspecifiedFound = true;
-								|		echo ' />';
-								|		echo '<img class="background-thumbnail" src="img/';
-								|		echo htmlspecialchars($background);
-								|		echo '" />';
-								|	}
-								|	echo '</label>';
-								|?>
-
-
+							input.filebutton#uploadAvatar(type='file' value='upload image' onchange='readURL(this);')
 
 
 							div
-								input#generate(type='submit' value='Generate image')
+								// if 'test' parameter set to a true value, then hidden input here allows missing avatar upload.
+								<?php if (housekeeping::isGet('test')) { ?><input type="hidden" id="test-input" value="1" name="test" /> <?php } ?>
+								input.button#generate(type='submit' value='Generate images')
 
-						<?php } ?>
+					.ksflex.half#canvasContainer
 
-					.ksbox.half#canvasContainer
-						canvas#canvas(width='1600' height='1600' style='max-width:100%; display:none')
+						div.initiallyHidden(style='display:none')
+							p
+								|Images have been generated!
+								.visible-ios
+									b Tap and hold on images to save in your photo library.
+								
+						div.placeholder.supertitle Example RECT image for Twitter
+						canvas#rectCanvas(width='1200' height='630' style='display:none')
+						img#rectImg.placeholder(src='img/rect-example.jpg')
+						div.download-container.initiallyHidden(style='display:none')
+							img.resultImage#rectResult
+							span.supertitle for Twitter
+							a.download.hidden-ios.button#downloadRect(href="#", data-shape='rect') Download
 
-						img#canvasImg(src='img/example.png')
+						div.placeholder.supertitle Example SQUARE image for FaceBook & Instagram
+						canvas#squareCanvas(width='1080' height='1080' style='display:none')
+						img#squareImg.placeholder(src='img/square-example.jpg')
+						div.download-container.initiallyHidden(style='display:none')
+							img.resultImage#squareResult
+							span.supertitle for Facebook & Instagram
+							a.download.hidden-ios.button#downloadSquare(href="#", data-shape='square') Download
 
-						div#saveContainer(style='display:none')
-							p.
-								Image has been generated! Feel free to adjust it to your liking.
+						div.placeholder.supertitle Example social media avatar
+						canvas#iconCanvas(width='600' height='600' style='max-width:300px; display:none;  border:1px solid rgba(128,128,128,0.3)')
+						img#iconImg.placeholder(src='img/profile-example.png' style='max-width:300px; display:block; margin:0 auto')
+
+						div.download-container.initiallyHidden(style='display:none')
+							img.resultImage#iconResult(style='max-width:300px; display:block; margin:0 auto')
+							span.supertitle Social Media Avatar
+							a.download.hidden-ios.button#downloadIcon(href="#", data-shape='icon') Download
+
+						div.initiallyHidden(style='display:none')
+
+							p
+								|Share your customized graphics and experiences by using #IEndorseNina and tagging us on social media!
+								br
+								|Twitter: @IEndorseNina
 
 							p(style='font-size:80%')
-								<b>Known issues:</b> If the fonts aren't quite right, try re-generating your image. And certain photos may be rotated incorrectly depending on the orientation of your phone's camera. If you are on an <b>iPhone</b> <a href="https://www.businessinsider.com/where-do-downloads-go-on-iphone">read this</a> to access your image. For now, do not use <b>Firefox</b> browser.
+								<b>Having problems?</b> If the fonts aren't quite right, try re-generating your image. And certain photos taken with your phone's camera may be rotated incorrectly depending on the orientation of your phone. Try taking a new photo with your phone oriented on a different side.
 
-							p.
-								If you like this, please <a href="https://twitter.com/danwood">follow me on Twitter</a> — and say hello! And when you share your image on social media, include the hashtag <b>#IEndorseBernie</b>.
-
-							p: a.button#download(href="#") Download Image
-
+			section.js-warning This page requires JavaScript! 
 
 		footer
 			p.
-				Copyright © 2020 <a href="https://twitter.com/danwood">Dan Wood</a>. This site is not affiliated with the Bernie 2020 campaign or any other campaign or candidate.  Most of the candidates listed on this site come from <a href="https://bit.ly/2RYMOhv">this list of candididates who reject corporate PAC money</a>. For personal use only. Do not use to mislead people; use your own image only. No information collected in the use of this website will be shared with any party.
+				For personal use and personal images only. No personal or demographic information is transmitted to, or collected by, this website. Any usage information collected will be used only for general analytics.
+			p.
+				Created WITH THESE HANDS 🙌 by <a href='https://twitter.com/danwood'>Dan Wood</a> and ✊ <a href='https://ourrevolution.com'>Our Revolution</a>. Also, thanks to the <a href='https://www.facebook.com/groups/ninaforcongress'>Nina for Congress</a> Facebook group for suggestions. 🖖
+			p.
+				Questions? Contact <a href='https://twitter.com/iendorsenina'>@IEndorseNina</a> on Twitter.
+ 
+		//- End scripts
 
+		script(src='https://code.jquery.com/jquery-3.5.1.min.js' integrity='sha384-ZvpUoO/+PpLXR1lu4jmpXWu80pZlYUAfxl5NsBMWOEPSjUn/6Z/hRTt8+pR6L4N2' crossorigin='anonymous')
+		script.
+			window.jQuery || document.write('<script src="js/vendor/jquery-3.5.1.min.js"><\\/script>')
+		script(src='js/plugins-min.js')
+		script(src='js/main-min.js')
+		//- Modernizer-like: Remove "no-js" class from element, if it exists
+		script.
+			document.documentElement.className = document.documentElement.className.replace("no-js","js");
 
+			// Set body class to iPhone, iPad, or other
+			var bodyClass = 'other'
+			if (navigator.userAgent.includes('iPhone')) bodyClass = 'iPhone';
+			if (navigator.userAgent.includes('iPad')  ) bodyClass = 'iPad';
+			document.body.className = bodyClass;
 
-	//- End scripts
+			//- Download canvas as a PNG image
+			//- https://stackoverflow.com/questions/10673122/how-to-save-canvas-as-an-image-with-canvas-todataurl#answer-44487883
 
-	.js-warning This page requires JavaScript! 
-	script(src='https://code.jquery.com/jquery-3.4.1.min.js' integrity='sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=' crossorigin='anonymous')
-	script.
-		window.jQuery || document.write('<script src="js/vendor/jquery-3.4.1.min.js"><\\/script>')
-	script(src='js/plugins.js')
-	script(src='js/exif.js')
-	script(src='js/main.js')
-	//- Modernizer-like: Remove "no-js" class from element, if it exists
-	script.
-		document.documentElement.className = document.documentElement.className.replace("no-js","js");
+			$(".download").on('click', function() {
 
-	//- Download canvas as a PNG image
-	//- https://stackoverflow.com/questions/10673122/how-to-save-canvas-as-an-image-with-canvas-todataurl#answer-44487883
-	script.
-		$("a#download").on('click', function() {
-			$(this).attr('download', 'I_Endorse_Bernie.png');
-			$(this).attr('href', canvas.toDataURL("image/png").replace("image/png", "image/octet-stream"));
-		});
+				var shape = $(this).data('shape');
+				var canvas = document.getElementById(shape + 'Canvas');
 
-		$("#generate").on('click', function() {
+				$(this).attr('download', 'I-Endorse-Nina-' + shape + '.png');
+				$(this).attr('href', canvas.toDataURL("image/png").replace("image/png", "image/octet-stream"));
+			});
 
-			// Set globals
+			<?php if (!empty(housekeeping::get('reason'))) { ?>
+			$("#reason-select").val(<?php echo htmlspecialchars(housekeeping::get('reason')); ?>);
+			<?php } ?>
 
-			var endorseeEncoded = $("#endorse-top").val();
-			if (endorseeEncoded === 'Bernie') {
-				endorseeInfo = { 'name' : "Bernie" };
-			} else if (endorseeEncoded === 'Nina') {
-				endorseeInfo = { 'name' : "Nina Turner", 'officeText': "Bernie's Vice President" };
-			} else {
-				endorseeEncoded = $("#endorse-sub").val();
-				endorseeInfo = JSON.parse(unescape(endorseeEncoded))
-			}
+			$( "#reason-select" ).change(function() {
+				var str = "";
+				$( "select option:selected" ).each(function() {
+				  if ($(this).val() !== '') {
+				    str += $( this ).text() + " ";
+				  }
+				});
+				$("#freeform-text").text(str.trim())
+			})
+			.change();
 
-			name = $('#name-input').val().trim();
-			job = $('#job-input').val().trim();
-			quotation = $('#quotation').val().trim();
-			
-			// Only allow volunteer boxes if Bernie checked
-			volunteer			= endorseeEncoded === 'Bernie' && $('#volunteer').is(':checked');
-			doorknocking		= $('#doorknocking').is(':checked');
-			calling				= $('#calling').is(':checked');
-			texting				= $('#texting').is(':checked');
-			berning				= $('#BERNing').is(':checked');
-			othervolunteering	= $('#other-volunteering').is(':checked');
+			$("#generate").on('click', function() {
 
-			plural = $('#plural').is(':checked');
+				// Set globals
 
-			avatarImageSrc = $("#avatarImage").attr('src');
+				firstname = $('#firstname-input').val().trim();
+				lastname = $('#lastname-input').val().trim();
+				where = $('#where-input').val().trim();
+				reason = $('#freeform-text').val();
+				variantNumber = $("input[name='variant']:checked").val();
 
-			bgcolor = <?php if (!empty(housekeeping::get('color'))) {
-				echo "'" . htmlspecialchars(housekeeping::get('color')) . "';";
-			} else {
-				echo '$("input[name=\'color\']:checked").val();';
-			}
-			?>
+				$("#myform input[type='radio']:checked")
 
-			background = $("input[name='background']:checked").val();
+				fullname = (firstname + " " + lastname).trim()
 
-			if (name.length < 4 || job.length < 10 || quotation.length < 30) {
-				alert("Please fill in all of the blanks with enough information!");
-			}
-			else if (avatarImageSrc === undefined) {
-				alert("You need to upload your image!");
-			}
-			else {
-				startGeneratingImage();
-			}
+				avatarImageSrc = $("#avatarImage").attr('src');
 
-			return false;
-		});
-
-	//- Load file locally
-	//- https://stackoverflow.com/questions/19183180/how-to-save-an-image-to-localstorage-and-display-it-on-the-next-page
-	script.
-		function readURL(input) 
-		{
-			$("#avatarImage").css("display", "block");
-
-			if (input.files && input.files[0]) {
-				var reader = new FileReader();
-
-				reader.onload = function (e) {
-
-					// After we get a URL to choose, get its EXIF data
-					// https://stackoverflow.com/a/37750456/25560
-
-					EXIF.getData(input.files[0], function () {
-						var orientation = EXIF.getTag(this,"Orientation");
-						var can = document.createElement("canvas");
-						var ctx = can.getContext('2d');
-						var thisImage = new Image;
-						thisImage.onload = function() {
-							can.width  = thisImage.width;
-							can.height = thisImage.height;
-							ctx.save();
-							var width  = can.width;  var styleWidth  = can.style.width;
-							var height = can.height; var styleHeight = can.style.height;
-							if (orientation) {
-								if (orientation > 4) {
-									can.width  = height; can.style.width  = styleHeight;
-									can.height = width;  can.style.height = styleWidth;
-								}
-								switch (orientation) {
-									case 2: ctx.translate(width, 0);     ctx.scale(-1,1); break;
-									case 3: ctx.translate(width,height); ctx.rotate(Math.PI); break;
-									case 4: ctx.translate(0,height);     ctx.scale(1,-1); break;
-									case 5: ctx.rotate(0.5 * Math.PI);   ctx.scale(1,-1); break;
-									case 6: ctx.rotate(0.5 * Math.PI);   ctx.translate(0,-height); break;
-									case 7: ctx.rotate(0.5 * Math.PI);   ctx.translate(width,-height); ctx.scale(-1,1); break;
-									case 8: ctx.rotate(-0.5 * Math.PI);  ctx.translate(-width,0); break;
-								}
-							}
-
-							ctx.drawImage(thisImage,0,0);
-							ctx.restore();
-							var dataURL = can.toDataURL();
-
-							// at this point you can save the image away to your back-end using 'dataURL'
-
-							$("#avatarImage").attr('src', dataURL);
-
-						}
-
-						// now trigger the onload function by setting the src to your HTML5 file object (called 'file' here)
-						thisImage.src = URL.createObjectURL(input.files[0]);
-					});
-
+				if (firstname.length < 2 || where.length < 2 || reason.length < 10) {
+					alert("Please fill in, at least, your first name and location and a reason");
+				}
+				else if ((avatarImageSrc === undefined || avatarImageSrc == 'img/avatar.png') && $('#test-input').val() != 1) {
+					alert("You need to upload your image!");
+				}
+				else {
+					startGeneratingImage();
 				}
 
-				// The readAsDataURL method is used to read the contents of the specified Blob or File. When the read operation is finished, the readyState becomes DONE, and the loadend is triggered. At that time, the result attribute contains the data as a data: URL representing the file's data as a base64 encoded string.
-				reader.readAsDataURL(input.files[0]);
-			}
-		}
+				return false;
+			});
 
-	//- Deal with changing of endorsement top level select tag
-	script.
-		var states = [
-		<?php
-			$candidates = Array();
-			$states = Array();
-			$prevState = '';
-			if (($handle = fopen("candidates_state_district.csv", "r")) !== FALSE) {
-					$header = fgetcsv($handle, 1000, ",");
-					while (($row = fgetcsv($handle, 1000, ",")) !== FALSE) {
-						$candidates[] = $row;
-						$state = $row[0];
-						if ($prevState !== $state) {
-							$states[] = $state;
-							$prevState = $state;
-						}
-				}
-				 }
-			fclose($handle);
+			//- Load file locally
+			//- https://stackoverflow.com/questions/19183180/how-to-save-an-image-to-localstorage-and-display-it-on-the-next-page
 
-			foreach ($states as $state) { echo "'$state', "; }
-		?>
-			];
-			var statesToCandidates = {
-		<?php
+			function readURL(input) 
+			{
+				if (input.files && input.files[0]) {
+					var reader = new FileReader();
 
-			$prevState = '';
-			foreach ($candidates as $candidate) {
-				$state = $candidate[0];
-				if ($state != $prevState) {
-					if ($prevState != '') { echo "], " . PHP_EOL; }
-					echo "'$state' : [ "  . PHP_EOL;
-					$prevState = $state;
-				}
-				echo "\t{'office' : '" . $candidate[1] . "', ";
-				echo "'name' : '" . $candidate[2] . "', ";
-				echo "'caucus' : '" . $candidate[3] . "', ";
-				echo "'slug' : '" . $candidate[4] . "'}," . PHP_EOL;
-			}
-			echo "], " . PHP_EOL;
-		?>
-		};
-		for (var i = 0; i < states.length; i++) {
-			$('#endorse-top').append('<option value="' + states[i] + '">' + states[i] + '…</option>');
-		}
+					reader.onload = function (e) {
+						$("#avatarImage").attr('src', e.target.result);
+					}
 
-		$("#volunteer").click(function() {
-			if ($('#volunteer').is(':checked') ) {
-				$("#other-volunteering").show();
-				$("#vol-checkboxes").show();
-			} else {
-				$("#vol-checkboxes").hide();
-			}
-		})
-
-
-		$( "#endorse-top" ).change(function() {
-			$("#endorse-sub").empty();
-			var state = $(this).val();
-			if (state !== 'Bernie') {
-				$("#volunteer").prop('checked', false);
-				$("#vol-label").hide();
-				$("#vol-checkboxes").hide();
-			}
-			else {
-				$("#vol-label").show();
-			}
-
-
-
-			var candidates = statesToCandidates[state];
-			$("#endorse-sub").attr('enabled', undefined !== candidates)
-			if (candidates !== undefined) {
-				for (var i = 0; i < candidates.length; i++) {
-					var candidate = candidates[i];
-					var officeText = candidate.office == 'Senate' ? 'U.S. Senate' : 'U.S. House District ' + candidate.office;
-					var officeTextLong = officeText + ', ' + state;
-					var candidateWithOfficeText = candidate; candidate['officeText'] = officeTextLong; candidate['state'] = state;
-					$('#endorse-sub').append("<option value='" + escape(JSON.stringify(candidateWithOfficeText)) + "'>" + candidate.name + ' - ' + officeText + ' ' + candidate.caucus + (candidate.slug !== '' ? '🖼' : '') + '</option>');
+					reader.readAsDataURL(input.files[0]);
 				}
 			}
 
-		});
 
-		$( "#endorse-top" ).change();		// initially set
+
 
