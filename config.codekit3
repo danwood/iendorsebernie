@@ -1,5 +1,5 @@
 {
-"AAInfo": "This is a CodeKit 3 project config file. MODIFYING THE CONTENTS OF THIS FILE IS A POOR LIFE DECISION. Doing so will cause CodeKit to crash and/or corrupt your project. I know it looks like JSON, but it is *not*. Many numbers in this file are 64-bit long long bitFlags, which JSON does not support. These numbers *cannot* be treated as discrete values and if you attempt to parse this file as standard JSON with any public JSON parser, these values will be corrupted. This file is not backwards-compatible with CodeKit 1 or 2. For more information, see https://codekitapp.com/",
+"AAInfo": "This is a CodeKit 3 project config file. EDITING THIS FILE IS A POOR LIFE DECISION. Doing so may cause CodeKit to crash and/or corrupt your project. Several critical values in this file are 64-bit integers, which JavaScript JSON parsers do not support because JavaScript cannot handle 64-bit integers. These values will be corrupted if the file is parsed with JavaScript. This file is not backwards-compatible with CodeKit 1 or 2. For details, see https://codekitapp.com/",
 "buildSteps": [
 	{
 		"name": "Process All Remaining Files and Folders",
@@ -7,486 +7,8 @@
 		"uuidString": "311F3702-0350-4AF3-818B-24CD49C5E7D5"
 		}
 	],
-"creatorBuild": "32147",
+"creatorBuild": "33081",
 "files": {
-	"/404.html": {
-		"cB": 0,
-		"ft": 8192,
-		"hM": 0,
-		"oA": 0,
-		"oAP": "/404.html",
-		"oF": 0
-		},
-	"/candidates/amberriddle.jpg": {
-		"ft": 16384,
-		"iS": 262698,
-		"jF": 0,
-		"oA": 0,
-		"oAP": "/candidates/amberriddle.jpg",
-		"oF": 0,
-		"oIPL": 0,
-		"opt": 0,
-		"q": 100
-		},
-	"/candidates/antoniohicks.jpg": {
-		"ft": 16384,
-		"iS": 25367,
-		"jF": 0,
-		"oA": 0,
-		"oAP": "/candidates/antoniohicks.jpg",
-		"oF": 0,
-		"oIPL": 0,
-		"opt": 0,
-		"q": 100
-		},
-	"/candidates/aoc.jpg": {
-		"ft": 16384,
-		"iS": 20161,
-		"jF": 0,
-		"oA": 0,
-		"oAP": "/candidates/aoc.jpg",
-		"oF": 0,
-		"oIPL": 0,
-		"opt": 0,
-		"q": 100
-		},
-	"/candidates/ashcraft.jpg": {
-		"ft": 16384,
-		"iS": 27949,
-		"jF": 0,
-		"oA": 0,
-		"oAP": "/candidates/ashcraft.jpg",
-		"oF": 0,
-		"oIPL": 0,
-		"opt": 0,
-		"q": 100
-		},
-	"/candidates/audreydenney.jpg": {
-		"ft": 16384,
-		"iS": 55458,
-		"jF": 0,
-		"oA": 0,
-		"oAP": "/candidates/audreydenney.jpg",
-		"oF": 0,
-		"oIPL": 0,
-		"opt": 0,
-		"q": 100
-		},
-	"/candidates/ayannapressley.jpg": {
-		"ft": 16384,
-		"iS": 21305,
-		"jF": 0,
-		"oA": 0,
-		"oAP": "/candidates/ayannapressley.jpg",
-		"oF": 0,
-		"oIPL": 0,
-		"opt": 0,
-		"q": 100
-		},
-	"/candidates/briannawu.jpg": {
-		"ft": 16384,
-		"iS": 24316,
-		"jF": 0,
-		"oA": 0,
-		"oAP": "/candidates/briannawu.jpg",
-		"oF": 0,
-		"oIPL": 0,
-		"opt": 0,
-		"q": 100
-		},
-	"/candidates/Burdette.jpg": {
-		"ft": 16384,
-		"iS": 137853,
-		"jF": 0,
-		"oA": 0,
-		"oAP": "/candidates/Burdette.jpg",
-		"oF": 0,
-		"oIPL": 0,
-		"opt": 0,
-		"q": 100
-		},
-	"/candidates/Caballero.jpg": {
-		"ft": 16384,
-		"iS": 146211,
-		"jF": 0,
-		"oA": 0,
-		"oAP": "/candidates/Caballero.jpg",
-		"oF": 0,
-		"oIPL": 0,
-		"opt": 0,
-		"q": 100
-		},
-	"/candidates/Call.jpg": {
-		"ft": 16384,
-		"iS": 234349,
-		"jF": 0,
-		"oA": 0,
-		"oAP": "/candidates/Call.jpg",
-		"oF": 0,
-		"oIPL": 0,
-		"opt": 0,
-		"q": 100
-		},
-	"/candidates/Carrigan.jpg": {
-		"ft": 16384,
-		"iS": 130716,
-		"jF": 0,
-		"oA": 0,
-		"oAP": "/candidates/Carrigan.jpg",
-		"oF": 0,
-		"oIPL": 0,
-		"opt": 0,
-		"q": 100
-		},
-	"/candidates/charlesbooker.jpg": {
-		"ft": 16384,
-		"iS": 30616,
-		"jF": 0,
-		"oA": 0,
-		"oAP": "/candidates/charlesbooker.jpg",
-		"oF": 0,
-		"oIPL": 0,
-		"opt": 0,
-		"q": 100
-		},
-	"/candidates/Clay.jpg": {
-		"ft": 16384,
-		"iS": 138308,
-		"jF": 0,
-		"oA": 0,
-		"oAP": "/candidates/Clay.jpg",
-		"oF": 0,
-		"oIPL": 0,
-		"opt": 0,
-		"q": 100
-		},
-	"/candidates/Collins.jpg": {
-		"ft": 16384,
-		"iS": 214542,
-		"jF": 0,
-		"oA": 0,
-		"oAP": "/candidates/Collins.jpg",
-		"oF": 0,
-		"oIPL": 0,
-		"opt": 0,
-		"q": 100
-		},
-	"/candidates/daniellockwood.jpg": {
-		"ft": 16384,
-		"iS": 31578,
-		"jF": 0,
-		"oA": 0,
-		"oAP": "/candidates/daniellockwood.jpg",
-		"oF": 0,
-		"oIPL": 0,
-		"opt": 0,
-		"q": 100
-		},
-	"/candidates/Dawkins.jpg": {
-		"ft": 16384,
-		"iS": 140516,
-		"jF": 0,
-		"oA": 0,
-		"oAP": "/candidates/Dawkins.jpg",
-		"oF": 0,
-		"oIPL": 0,
-		"opt": 0,
-		"q": 100
-		},
-	"/candidates/donnaimam.jpg": {
-		"ft": 16384,
-		"iS": 16564,
-		"jF": 0,
-		"oA": 0,
-		"oAP": "/candidates/donnaimam.jpg",
-		"oF": 0,
-		"oIPL": 0,
-		"opt": 0,
-		"q": 100
-		},
-	"/candidates/Emard.jpg": {
-		"ft": 16384,
-		"iS": 145397,
-		"jF": 0,
-		"oA": 0,
-		"oAP": "/candidates/Emard.jpg",
-		"oF": 0,
-		"oIPL": 0,
-		"opt": 0,
-		"q": 100
-		},
-	"/candidates/Hernandez.jpg": {
-		"ft": 16384,
-		"iS": 240490,
-		"jF": 0,
-		"oA": 0,
-		"oAP": "/candidates/Hernandez.jpg",
-		"oF": 0,
-		"oIPL": 0,
-		"opt": 0,
-		"q": 100
-		},
-	"/candidates/Hood.jpg": {
-		"ft": 16384,
-		"iS": 248783,
-		"jF": 0,
-		"oA": 0,
-		"oAP": "/candidates/Hood.jpg",
-		"oF": 0,
-		"oIPL": 0,
-		"opt": 0,
-		"q": 100
-		},
-	"/candidates/jessicacisneros.jpg": {
-		"ft": 16384,
-		"iS": 59043,
-		"jF": 0,
-		"oA": 0,
-		"oAP": "/candidates/jessicacisneros.jpg",
-		"oF": 0,
-		"oIPL": 0,
-		"opt": 1,
-		"q": 100
-		},
-	"/candidates/justinwooton.jpg": {
-		"ft": 16384,
-		"iS": 37508,
-		"jF": 0,
-		"oA": 0,
-		"oAP": "/candidates/justinwooton.jpg",
-		"oF": 0,
-		"oIPL": 0,
-		"opt": 0,
-		"q": 100
-		},
-	"/candidates/Kidman.jpg": {
-		"ft": 16384,
-		"iS": 268259,
-		"jF": 0,
-		"oA": 0,
-		"oAP": "/candidates/Kidman.jpg",
-		"oF": 0,
-		"oIPL": 0,
-		"opt": 0,
-		"q": 100
-		},
-	"/candidates/Kishineff.jpg": {
-		"ft": 16384,
-		"iS": 119447,
-		"jF": 0,
-		"oA": 0,
-		"oAP": "/candidates/Kishineff.jpg",
-		"oF": 0,
-		"oIPL": 0,
-		"opt": 0,
-		"q": 100
-		},
-	"/candidates/lorenagarcia.jpg": {
-		"ft": 16384,
-		"iS": 27754,
-		"jF": 0,
-		"oA": 0,
-		"oAP": "/candidates/lorenagarcia.jpg",
-		"oF": 0,
-		"oIPL": 0,
-		"opt": 0,
-		"q": 100
-		},
-	"/candidates/Ludwig.jpg": {
-		"ft": 16384,
-		"iS": 181947,
-		"jF": 0,
-		"oA": 0,
-		"oAP": "/candidates/Ludwig.jpg",
-		"oF": 0,
-		"oIPL": 0,
-		"opt": 0,
-		"q": 100
-		},
-	"/candidates/Manley.jpg": {
-		"ft": 16384,
-		"iS": 155594,
-		"jF": 0,
-		"oA": 0,
-		"oAP": "/candidates/Manley.jpg",
-		"oF": 0,
-		"oIPL": 0,
-		"opt": 0,
-		"q": 100
-		},
-	"/candidates/Marcano.jpg": {
-		"ft": 16384,
-		"iS": 117182,
-		"jF": 0,
-		"oA": 0,
-		"oAP": "/candidates/Marcano.jpg",
-		"oF": 0,
-		"oIPL": 0,
-		"opt": 0,
-		"q": 100
-		},
-	"/candidates/Mattlin.jpg": {
-		"ft": 16384,
-		"iS": 228368,
-		"jF": 0,
-		"oA": 0,
-		"oAP": "/candidates/Mattlin.jpg",
-		"oF": 0,
-		"oIPL": 0,
-		"opt": 0,
-		"q": 100
-		},
-	"/candidates/Mohsini.jpg": {
-		"ft": 16384,
-		"iS": 118109,
-		"jF": 0,
-		"oA": 0,
-		"oAP": "/candidates/Mohsini.jpg",
-		"oF": 0,
-		"oIPL": 0,
-		"opt": 0,
-		"q": 100
-		},
-	"/candidates/Mulcahy.jpg": {
-		"ft": 16384,
-		"iS": 148901,
-		"jF": 0,
-		"oA": 0,
-		"oAP": "/candidates/Mulcahy.jpg",
-		"oF": 0,
-		"oIPL": 0,
-		"opt": 0,
-		"q": 100
-		},
-	"/candidates/Nuckolls.jpg": {
-		"ft": 16384,
-		"iS": 192575,
-		"jF": 0,
-		"oA": 0,
-		"oAP": "/candidates/Nuckolls.jpg",
-		"oF": 0,
-		"oIPL": 0,
-		"opt": 0,
-		"q": 100
-		},
-	"/candidates/Rajput.jpg": {
-		"ft": 16384,
-		"iS": 191635,
-		"jF": 0,
-		"oA": 0,
-		"oAP": "/candidates/Rajput.jpg",
-		"oF": 0,
-		"oIPL": 0,
-		"opt": 0,
-		"q": 100
-		},
-	"/candidates/romanoff.jpg": {
-		"ft": 16384,
-		"iS": 16069,
-		"jF": 0,
-		"oA": 0,
-		"oAP": "/candidates/romanoff.jpg",
-		"oF": 0,
-		"oIPL": 0,
-		"opt": 0,
-		"q": 100
-		},
-	"/candidates/semahernandez.jpg": {
-		"ft": 16384,
-		"iS": 22893,
-		"jF": 0,
-		"oA": 0,
-		"oAP": "/candidates/semahernandez.jpg",
-		"oF": 0,
-		"oIPL": 0,
-		"opt": 0,
-		"q": 100
-		},
-	"/candidates/shahidbuttar.jpg": {
-		"ft": 16384,
-		"iS": 65470,
-		"jF": 0,
-		"oA": 0,
-		"oAP": "/candidates/shahidbuttar.jpg",
-		"oF": 0,
-		"oIPL": 0,
-		"opt": 0,
-		"q": 100
-		},
-	"/candidates/Smith.jpg": {
-		"ft": 16384,
-		"iS": 242997,
-		"jF": 0,
-		"oA": 0,
-		"oAP": "/candidates/Smith.jpg",
-		"oF": 0,
-		"oIPL": 0,
-		"opt": 0,
-		"q": 100
-		},
-	"/candidates/Snow.jpg": {
-		"ft": 16384,
-		"iS": 197281,
-		"jF": 0,
-		"oA": 0,
-		"oAP": "/candidates/Snow.jpg",
-		"oF": 0,
-		"oIPL": 0,
-		"opt": 0,
-		"q": 100
-		},
-	"/candidates/Thomas.jpg": {
-		"ft": 16384,
-		"iS": 166444,
-		"jF": 0,
-		"oA": 0,
-		"oAP": "/candidates/Thomas.jpg",
-		"oF": 0,
-		"oIPL": 0,
-		"opt": 0,
-		"q": 100
-		},
-	"/candidates/Vega.jpg": {
-		"ft": 16384,
-		"iS": 176629,
-		"jF": 0,
-		"oA": 0,
-		"oAP": "/candidates/Vega.jpg",
-		"oF": 0,
-		"oIPL": 0,
-		"opt": 0,
-		"q": 100
-		},
-	"/candidates/Vondrasek.jpg": {
-		"ft": 16384,
-		"iS": 198195,
-		"jF": 0,
-		"oA": 0,
-		"oAP": "/candidates/Vondrasek.jpg",
-		"oF": 0,
-		"oIPL": 0,
-		"opt": 0,
-		"q": 100
-		},
-	"/candidates/Winters.jpg": {
-		"ft": 16384,
-		"iS": 296105,
-		"jF": 0,
-		"oA": 0,
-		"oAP": "/candidates/Winters.jpg",
-		"oF": 0,
-		"oIPL": 0,
-		"opt": 0,
-		"q": 100
-		},
-	"/candidates_state_district.csv": {
-		"cB": 0,
-		"ft": 8192,
-		"hM": 0,
-		"oA": 0,
-		"oAP": "/candidates_state_district.csv",
-		"oF": 0
-		},
 	"/classes/class.housekeeping.php": {
 		"cB": 0,
 		"ft": 8192,
@@ -541,21 +63,13 @@
 		"oF": 0,
 		"oS": 3
 		},
-	"/css/main.css.map": {
-		"cB": 0,
-		"ft": 8192,
-		"hM": 0,
-		"oA": 0,
-		"oAP": "/css/main.css.map",
-		"oF": 0
-		},
 	"/css/main.scss": {
 		"aP": 0,
 		"bl": 0,
 		"dP": 10,
 		"ec": 1,
 		"ft": 4,
-		"ma": 1,
+		"ma": 0,
 		"oA": 0,
 		"oAP": "/css/main.css",
 		"oF": 0,
@@ -585,33 +99,6 @@
 		"oS": 0,
 		"sct": 1
 		},
-	"/favicon.ico": {
-		"cB": 0,
-		"ft": 8192,
-		"hM": 0,
-		"oA": 0,
-		"oAP": "/favicon.ico",
-		"oF": 0
-		},
-	"/humans.txt": {
-		"cB": 0,
-		"ft": 8192,
-		"hM": 0,
-		"oA": 0,
-		"oAP": "/humans.txt",
-		"oF": 0
-		},
-	"/icon.png": {
-		"ft": 32768,
-		"iS": 4029,
-		"oA": 0,
-		"oAP": "/icon.png",
-		"oF": 0,
-		"oIPL": 1,
-		"opt": 1,
-		"oT": 1,
-		"q": 100
-		},
 	"/img/.gitignore": {
 		"cB": 0,
 		"ft": 8192,
@@ -620,148 +107,161 @@
 		"oAP": "/img/.gitignore",
 		"oF": 0
 		},
-	"/img/background-2gupHso.jpg": {
-		"ft": 16384,
-		"iS": 133697,
-		"jF": 0,
-		"oA": 0,
-		"oAP": "/img/background-2gupHso.jpg",
-		"oF": 0,
-		"oIPL": 0,
-		"opt": 0,
-		"q": 100
-		},
-	"/img/background-2guprGE.jpg": {
-		"ft": 16384,
-		"iS": 179361,
-		"jF": 0,
-		"oA": 0,
-		"oAP": "/img/background-2guprGE.jpg",
-		"oF": 0,
-		"oIPL": 0,
-		"opt": 0,
-		"q": 100
-		},
-	"/img/background-x8WUsc.jpg": {
-		"ft": 16384,
-		"iS": 245069,
-		"jF": 0,
-		"oA": 0,
-		"oAP": "/img/background-x8WUsc.jpg",
-		"oF": 0,
-		"oIPL": 0,
-		"opt": 0,
-		"q": 100
-		},
-	"/img/background1.jpg": {
-		"ft": 16384,
-		"iS": 160653,
-		"jF": 0,
-		"oA": 0,
-		"oAP": "/img/background1.jpg",
-		"oF": 0,
-		"oIPL": 0,
-		"opt": 0,
-		"q": 100
-		},
-	"/img/background2.jpg": {
-		"ft": 16384,
-		"iS": 225141,
-		"jF": 0,
-		"oA": 0,
-		"oAP": "/img/background2.jpg",
-		"oF": 0,
-		"oIPL": 0,
-		"opt": 0,
-		"q": 100
-		},
-	"/img/background3.jpg": {
-		"ft": 16384,
-		"iS": 158905,
-		"jF": 0,
-		"oA": 0,
-		"oAP": "/img/background3.jpg",
-		"oF": 0,
-		"oIPL": 0,
-		"opt": 0,
-		"q": 100
-		},
-	"/img/background4.jpg": {
-		"ft": 16384,
-		"iS": 164833,
-		"jF": 0,
-		"oA": 0,
-		"oAP": "/img/background4.jpg",
-		"oF": 0,
-		"oIPL": 0,
-		"opt": 0,
-		"q": 100
-		},
-	"/img/background5.jpg": {
-		"ft": 16384,
-		"iS": 124319,
-		"jF": 0,
-		"oA": 0,
-		"oAP": "/img/background5.jpg",
-		"oF": 0,
-		"oIPL": 0,
-		"opt": 0,
-		"q": 100
-		},
-	"/img/background6.jpg": {
-		"ft": 16384,
-		"iS": 225635,
-		"jF": 0,
-		"oA": 0,
-		"oAP": "/img/background6.jpg",
-		"oF": 0,
-		"oIPL": 0,
-		"opt": 0,
-		"q": 100
-		},
-	"/img/background7.jpg": {
-		"ft": 16384,
-		"iS": 155624,
-		"jF": 0,
-		"oA": 0,
-		"oAP": "/img/background7.jpg",
-		"oF": 0,
-		"oIPL": 0,
-		"opt": 0,
-		"q": 100
-		},
-	"/img/bird.png": {
+	"/img/avatar.png": {
 		"ft": 32768,
-		"iS": 2062,
+		"iS": 3080,
 		"oA": 0,
-		"oAP": "/img/bird.png",
+		"oAP": "/img/avatar.png",
 		"oF": 0,
 		"oIPL": 0,
 		"opt": 0,
 		"oT": 1,
-		"q": 100
+		"ou": "lpckwebp-none",
+		"q": 100,
+		"rq": 75
 		},
-	"/img/example-nina.png": {
-		"ft": 32768,
-		"iS": 56924,
+	"/img/LmpwZw.jpg": {
+		"ft": 16384,
+		"iS": 49884,
+		"jF": 0,
 		"oA": 0,
-		"oAP": "/img/example-nina.png",
+		"oAP": "/img/LmpwZw.jpg",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"ou": "lpckwebp-none",
+		"q": 100,
+		"rq": 75
+		},
+	"/img/profile-example.png": {
+		"ft": 32768,
+		"iS": 49624,
+		"oA": 0,
+		"oAP": "/img/profile-example.png",
+		"oF": 0,
+		"oIPL": 1,
+		"opt": 1,
+		"oT": 1,
+		"ou": "lpckwebp-none",
+		"q": 100,
+		"rq": 75
+		},
+	"/img/profile-template.png": {
+		"ft": 32768,
+		"iS": 86986,
+		"oA": 0,
+		"oAP": "/img/profile-template.png",
+		"oF": 0,
+		"oIPL": 1,
+		"opt": 1,
+		"oT": 1,
+		"ou": "lpckwebp-none",
+		"q": 100,
+		"rq": 75
+		},
+	"/img/rect-endorse.png": {
+		"ft": 32768,
+		"iS": 58681,
+		"oA": 0,
+		"oAP": "/img/rect-endorse.png",
 		"oF": 0,
 		"oIPL": 0,
 		"opt": 0,
 		"oT": 1,
-		"q": 100
+		"ou": "lpckwebp-none",
+		"q": 100,
+		"rq": 75
 		},
-	"/img/example.png": {
+	"/img/rect-endorses.png": {
 		"ft": 32768,
-		"iS": 41786,
+		"iS": 62203,
 		"oA": 0,
-		"oAP": "/img/example.png",
+		"oAP": "/img/rect-endorses.png",
 		"oF": 0,
 		"oIPL": 0,
 		"opt": 0,
 		"oT": 1,
-		"q": 100
+		"ou": "lpckwebp-none",
+		"q": 100,
+		"rq": 75
+		},
+	"/img/rect-example.png": {
+		"ft": 32768,
+		"iS": 246189,
+		"oA": 0,
+		"oAP": "/img/rect-example.png",
+		"oF": 0,
+		"oIPL": 1,
+		"opt": 1,
+		"oT": 1,
+		"ou": "lpckwebp-none",
+		"q": 100,
+		"rq": 75
+		},
+	"/img/rect-template.png": {
+		"ft": 32768,
+		"iS": 766324,
+		"oA": 0,
+		"oAP": "/img/rect-template.png",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"oT": 1,
+		"ou": "lpckwebp-none",
+		"q": 100,
+		"rq": 75
+		},
+	"/img/square-endorse.png": {
+		"ft": 32768,
+		"iS": 59598,
+		"oA": 0,
+		"oAP": "/img/square-endorse.png",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"oT": 1,
+		"ou": "lpckwebp-none",
+		"q": 100,
+		"rq": 75
+		},
+	"/img/square-endorses.png": {
+		"ft": 32768,
+		"iS": 60004,
+		"oA": 0,
+		"oAP": "/img/square-endorses.png",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"oT": 1,
+		"ou": "lpckwebp-none",
+		"q": 100,
+		"rq": 75
+		},
+	"/img/square-example.png": {
+		"ft": 32768,
+		"iS": 176744,
+		"oA": 0,
+		"oAP": "/img/square-example.png",
+		"oF": 0,
+		"oIPL": 1,
+		"opt": 1,
+		"oT": 1,
+		"ou": "lpckwebp-none",
+		"q": 100,
+		"rq": 75
+		},
+	"/img/square-template.png": {
+		"ft": 32768,
+		"iS": 507685,
+		"oA": 0,
+		"oAP": "/img/square-template.png",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"oT": 1,
+		"ou": "lpckwebp-none",
+		"q": 100,
+		"rq": 75
 		},
 	"/index.php": {
 		"cB": 0,
@@ -778,16 +278,16 @@
 		"hM": 0,
 		"oA": 0,
 		"oAP": "/index.php",
-		"oF": 2,
-		"oS": 0
+		"oF": 3,
+		"oS": 1
 		},
-	"/js/exif.js": {
+	"/js/main-min.js": {
 		"bF": 0,
 		"ft": 64,
 		"ma": 0,
 		"mi": 1,
 		"oA": 0,
-		"oAP": "/js/exif-min.js",
+		"oAP": "/js/main-min-min.js",
 		"oF": 0,
 		"sC": 3,
 		"tS": 0
@@ -797,9 +297,20 @@
 		"ft": 64,
 		"ma": 0,
 		"mi": 1,
-		"oA": 1,
+		"oA": 0,
 		"oAP": "/js/main-min.js",
 		"oF": 1,
+		"sC": 0,
+		"tS": 0
+		},
+	"/js/plugins-min.js": {
+		"bF": 0,
+		"ft": 64,
+		"ma": 0,
+		"mi": 1,
+		"oA": 0,
+		"oAP": "/js/plugins-min-min.js",
+		"oF": 0,
 		"sC": 3,
 		"tS": 0
 		},
@@ -808,607 +319,38 @@
 		"ft": 64,
 		"ma": 0,
 		"mi": 1,
-		"oA": 1,
+		"oA": 0,
 		"oAP": "/js/plugins-min.js",
 		"oF": 1,
-		"sC": 3,
+		"sC": 0,
 		"tS": 0
 		},
-	"/js/vendor/jquery-3.4.1.min.js": {
+	"/js/vendor/jquery-3.5.1.min.js": {
 		"bF": 0,
 		"ft": 64,
 		"ma": 0,
 		"mi": 1,
 		"oA": 0,
-		"oAP": "/js/vendor/jquery-3.4.1.min-min.js",
+		"oAP": "/js/vendor/jquery-3.5.1.min-min.js",
 		"oF": 0,
 		"sC": 3,
 		"tS": 0
 		},
-	"/LICENSE": {
+	"/publish-live.command": {
 		"cB": 0,
 		"ft": 8192,
 		"hM": 0,
 		"oA": 0,
-		"oAP": "/LICENSE",
+		"oAP": "/publish-live.command",
 		"oF": 0
 		},
-	"/README.md": {
-		"cB": 0,
-		"cS": 0,
-		"eF": 1,
-		"eL": 1,
-		"ema": 1,
-		"eSQ": 1,
-		"ft": 4096,
-		"hM": 0,
-		"oA": 0,
-		"oAP": "/README.html",
-		"oF": 0,
-		"oFM": 0,
-		"oS": 0,
-		"pHT": 0,
-		"pME": 1,
-		"rFN": 0,
-		"uCM": 0
-		},
-	"/robots.txt": {
+	"/README.txt": {
 		"cB": 0,
 		"ft": 8192,
 		"hM": 0,
 		"oA": 0,
-		"oAP": "/robots.txt",
+		"oAP": "/README.txt",
 		"oF": 0
-		},
-	"/states/AK.png": {
-		"ft": 32768,
-		"iS": 4258,
-		"oA": 0,
-		"oAP": "/states/AK.png",
-		"oF": 0,
-		"oIPL": 1,
-		"opt": 1,
-		"oT": 1,
-		"q": 100
-		},
-	"/states/AL.png": {
-		"ft": 32768,
-		"iS": 883,
-		"oA": 0,
-		"oAP": "/states/AL.png",
-		"oF": 0,
-		"oIPL": 1,
-		"opt": 1,
-		"oT": 1,
-		"q": 100
-		},
-	"/states/AR.png": {
-		"ft": 32768,
-		"iS": 854,
-		"oA": 0,
-		"oAP": "/states/AR.png",
-		"oF": 0,
-		"oIPL": 1,
-		"opt": 1,
-		"oT": 1,
-		"q": 100
-		},
-	"/states/AZ.png": {
-		"ft": 32768,
-		"iS": 1648,
-		"oA": 0,
-		"oAP": "/states/AZ.png",
-		"oF": 0,
-		"oIPL": 1,
-		"opt": 1,
-		"oT": 1,
-		"q": 100
-		},
-	"/states/CA.png": {
-		"ft": 32768,
-		"iS": 3033,
-		"oA": 0,
-		"oAP": "/states/CA.png",
-		"oF": 0,
-		"oIPL": 1,
-		"opt": 1,
-		"oT": 1,
-		"q": 100
-		},
-	"/states/CO.png": {
-		"ft": 32768,
-		"iS": 953,
-		"oA": 0,
-		"oAP": "/states/CO.png",
-		"oF": 0,
-		"oIPL": 0,
-		"opt": 0,
-		"oT": 1,
-		"q": 100
-		},
-	"/states/CT.png": {
-		"ft": 32768,
-		"iS": 451,
-		"oA": 0,
-		"oAP": "/states/CT.png",
-		"oF": 0,
-		"oIPL": 1,
-		"opt": 1,
-		"oT": 1,
-		"q": 100
-		},
-	"/states/DE.png": {
-		"ft": 32768,
-		"iS": 408,
-		"oA": 0,
-		"oAP": "/states/DE.png",
-		"oF": 0,
-		"oIPL": 1,
-		"opt": 1,
-		"oT": 1,
-		"q": 100
-		},
-	"/states/FL.png": {
-		"ft": 32768,
-		"iS": 2131,
-		"oA": 0,
-		"oAP": "/states/FL.png",
-		"oF": 0,
-		"oIPL": 1,
-		"opt": 1,
-		"oT": 1,
-		"q": 100
-		},
-	"/states/GA.png": {
-		"ft": 32768,
-		"iS": 1379,
-		"oA": 0,
-		"oAP": "/states/GA.png",
-		"oF": 0,
-		"oIPL": 1,
-		"opt": 1,
-		"oT": 1,
-		"q": 100
-		},
-	"/states/HI.png": {
-		"ft": 32768,
-		"iS": 1500,
-		"oA": 0,
-		"oAP": "/states/HI.png",
-		"oF": 0,
-		"oIPL": 1,
-		"opt": 1,
-		"oT": 1,
-		"q": 100
-		},
-	"/states/IA.png": {
-		"ft": 32768,
-		"iS": 938,
-		"oA": 0,
-		"oAP": "/states/IA.png",
-		"oF": 0,
-		"oIPL": 1,
-		"opt": 1,
-		"oT": 1,
-		"q": 100
-		},
-	"/states/ID.png": {
-		"ft": 32768,
-		"iS": 1923,
-		"oA": 0,
-		"oAP": "/states/ID.png",
-		"oF": 0,
-		"oIPL": 1,
-		"opt": 1,
-		"oT": 1,
-		"q": 100
-		},
-	"/states/IL.png": {
-		"ft": 32768,
-		"iS": 1336,
-		"oA": 0,
-		"oAP": "/states/IL.png",
-		"oF": 0,
-		"oIPL": 1,
-		"opt": 1,
-		"oT": 1,
-		"q": 100
-		},
-	"/states/IN.png": {
-		"ft": 32768,
-		"iS": 879,
-		"oA": 0,
-		"oAP": "/states/IN.png",
-		"oF": 0,
-		"oIPL": 1,
-		"opt": 1,
-		"oT": 1,
-		"q": 100
-		},
-	"/states/KS.png": {
-		"ft": 32768,
-		"iS": 658,
-		"oA": 0,
-		"oAP": "/states/KS.png",
-		"oF": 0,
-		"oIPL": 1,
-		"opt": 1,
-		"oT": 1,
-		"q": 100
-		},
-	"/states/KY.png": {
-		"ft": 32768,
-		"iS": 1235,
-		"oA": 0,
-		"oAP": "/states/KY.png",
-		"oF": 0,
-		"oIPL": 1,
-		"opt": 1,
-		"oT": 1,
-		"q": 100
-		},
-	"/states/LA.png": {
-		"ft": 32768,
-		"iS": 1460,
-		"oA": 0,
-		"oAP": "/states/LA.png",
-		"oF": 0,
-		"oIPL": 1,
-		"opt": 1,
-		"oT": 1,
-		"q": 100
-		},
-	"/states/MA.png": {
-		"ft": 32768,
-		"iS": 695,
-		"oA": 0,
-		"oAP": "/states/MA.png",
-		"oF": 0,
-		"oIPL": 1,
-		"opt": 1,
-		"oT": 1,
-		"q": 100
-		},
-	"/states/MD.png": {
-		"ft": 32768,
-		"iS": 1175,
-		"oA": 0,
-		"oAP": "/states/MD.png",
-		"oF": 0,
-		"oIPL": 1,
-		"opt": 1,
-		"oT": 1,
-		"q": 100
-		},
-	"/states/ME.png": {
-		"ft": 32768,
-		"iS": 1352,
-		"oA": 0,
-		"oAP": "/states/ME.png",
-		"oF": 0,
-		"oIPL": 1,
-		"opt": 1,
-		"oT": 1,
-		"q": 100
-		},
-	"/states/MI.png": {
-		"ft": 32768,
-		"iS": 2269,
-		"oA": 0,
-		"oAP": "/states/MI.png",
-		"oF": 0,
-		"oIPL": 1,
-		"opt": 1,
-		"oT": 1,
-		"q": 100
-		},
-	"/states/MN.png": {
-		"ft": 32768,
-		"iS": 1595,
-		"oA": 0,
-		"oAP": "/states/MN.png",
-		"oF": 0,
-		"oIPL": 1,
-		"opt": 1,
-		"oT": 1,
-		"q": 100
-		},
-	"/states/MO.png": {
-		"ft": 32768,
-		"iS": 1211,
-		"oA": 0,
-		"oAP": "/states/MO.png",
-		"oF": 0,
-		"oIPL": 1,
-		"opt": 1,
-		"oT": 1,
-		"q": 100
-		},
-	"/states/MS.png": {
-		"ft": 32768,
-		"iS": 872,
-		"oA": 0,
-		"oAP": "/states/MS.png",
-		"oF": 0,
-		"oIPL": 1,
-		"opt": 1,
-		"oT": 1,
-		"q": 100
-		},
-	"/states/MT.png": {
-		"ft": 32768,
-		"iS": 1665,
-		"oA": 0,
-		"oAP": "/states/MT.png",
-		"oF": 0,
-		"oIPL": 1,
-		"opt": 1,
-		"oT": 1,
-		"q": 100
-		},
-	"/states/NC.png": {
-		"ft": 32768,
-		"iS": 1642,
-		"oA": 0,
-		"oAP": "/states/NC.png",
-		"oF": 0,
-		"oIPL": 1,
-		"opt": 1,
-		"oT": 1,
-		"q": 100
-		},
-	"/states/ND.png": {
-		"ft": 32768,
-		"iS": 775,
-		"oA": 0,
-		"oAP": "/states/ND.png",
-		"oF": 0,
-		"oIPL": 1,
-		"opt": 1,
-		"oT": 1,
-		"q": 100
-		},
-	"/states/NE.png": {
-		"ft": 32768,
-		"iS": 980,
-		"oA": 0,
-		"oAP": "/states/NE.png",
-		"oF": 0,
-		"oIPL": 1,
-		"opt": 1,
-		"oT": 1,
-		"q": 100
-		},
-	"/states/NH.png": {
-		"ft": 32768,
-		"iS": 650,
-		"oA": 0,
-		"oAP": "/states/NH.png",
-		"oF": 0,
-		"oIPL": 1,
-		"opt": 1,
-		"oT": 1,
-		"q": 100
-		},
-	"/states/NJ.png": {
-		"ft": 32768,
-		"iS": 660,
-		"oA": 0,
-		"oAP": "/states/NJ.png",
-		"oF": 0,
-		"oIPL": 1,
-		"opt": 1,
-		"oT": 1,
-		"q": 100
-		},
-	"/states/NM.png": {
-		"ft": 32768,
-		"iS": 987,
-		"oA": 0,
-		"oAP": "/states/NM.png",
-		"oF": 0,
-		"oIPL": 1,
-		"opt": 1,
-		"oT": 1,
-		"q": 100
-		},
-	"/states/NV.png": {
-		"ft": 32768,
-		"iS": 1801,
-		"oA": 0,
-		"oAP": "/states/NV.png",
-		"oF": 0,
-		"oIPL": 1,
-		"opt": 1,
-		"oT": 1,
-		"q": 100
-		},
-	"/states/NY.png": {
-		"ft": 32768,
-		"iS": 1584,
-		"oA": 0,
-		"oAP": "/states/NY.png",
-		"oF": 0,
-		"oIPL": 1,
-		"opt": 1,
-		"oT": 1,
-		"q": 100
-		},
-	"/states/OH.png": {
-		"ft": 32768,
-		"iS": 1108,
-		"oA": 0,
-		"oAP": "/states/OH.png",
-		"oF": 0,
-		"oIPL": 1,
-		"opt": 1,
-		"oT": 1,
-		"q": 100
-		},
-	"/states/OK.png": {
-		"ft": 32768,
-		"iS": 945,
-		"oA": 0,
-		"oAP": "/states/OK.png",
-		"oF": 0,
-		"oIPL": 1,
-		"opt": 1,
-		"oT": 1,
-		"q": 100
-		},
-	"/states/OR.png": {
-		"ft": 32768,
-		"iS": 1753,
-		"oA": 0,
-		"oAP": "/states/OR.png",
-		"oF": 0,
-		"oIPL": 1,
-		"opt": 1,
-		"oT": 1,
-		"q": 100
-		},
-	"/states/PA.png": {
-		"ft": 32768,
-		"iS": 968,
-		"oA": 0,
-		"oAP": "/states/PA.png",
-		"oF": 0,
-		"oIPL": 1,
-		"opt": 1,
-		"oT": 1,
-		"q": 100
-		},
-	"/states/RI.png": {
-		"ft": 32768,
-		"iS": 332,
-		"oA": 0,
-		"oAP": "/states/RI.png",
-		"oF": 0,
-		"oIPL": 1,
-		"opt": 1,
-		"oT": 1,
-		"q": 100
-		},
-	"/states/SC.png": {
-		"ft": 32768,
-		"iS": 1045,
-		"oA": 0,
-		"oAP": "/states/SC.png",
-		"oF": 0,
-		"oIPL": 1,
-		"opt": 1,
-		"oT": 1,
-		"q": 100
-		},
-	"/states/SD.png": {
-		"ft": 32768,
-		"iS": 940,
-		"oA": 0,
-		"oAP": "/states/SD.png",
-		"oF": 0,
-		"oIPL": 1,
-		"opt": 1,
-		"oT": 1,
-		"q": 100
-		},
-	"/states/TN.png": {
-		"ft": 32768,
-		"iS": 925,
-		"oA": 0,
-		"oAP": "/states/TN.png",
-		"oF": 0,
-		"oIPL": 1,
-		"opt": 1,
-		"oT": 1,
-		"q": 100
-		},
-	"/states/TX.png": {
-		"ft": 32768,
-		"iS": 3554,
-		"oA": 0,
-		"oAP": "/states/TX.png",
-		"oF": 0,
-		"oIPL": 1,
-		"opt": 1,
-		"oT": 1,
-		"q": 100
-		},
-	"/states/UT.png": {
-		"ft": 32768,
-		"iS": 1187,
-		"oA": 0,
-		"oAP": "/states/UT.png",
-		"oF": 0,
-		"oIPL": 1,
-		"opt": 1,
-		"oT": 1,
-		"q": 100
-		},
-	"/states/VA.png": {
-		"ft": 32768,
-		"iS": 1455,
-		"oA": 0,
-		"oAP": "/states/VA.png",
-		"oF": 0,
-		"oIPL": 1,
-		"opt": 1,
-		"oT": 1,
-		"q": 100
-		},
-	"/states/VT.png": {
-		"ft": 32768,
-		"iS": 586,
-		"oA": 0,
-		"oAP": "/states/VT.png",
-		"oF": 0,
-		"oIPL": 1,
-		"opt": 1,
-		"oT": 1,
-		"q": 100
-		},
-	"/states/WA.png": {
-		"ft": 32768,
-		"iS": 1773,
-		"oA": 0,
-		"oAP": "/states/WA.png",
-		"oF": 0,
-		"oIPL": 1,
-		"opt": 1,
-		"oT": 1,
-		"q": 100
-		},
-	"/states/WI.png": {
-		"ft": 32768,
-		"iS": 1273,
-		"oA": 0,
-		"oAP": "/states/WI.png",
-		"oF": 0,
-		"oIPL": 1,
-		"opt": 1,
-		"oT": 1,
-		"q": 100
-		},
-	"/states/WV.png": {
-		"ft": 32768,
-		"iS": 1248,
-		"oA": 0,
-		"oAP": "/states/WV.png",
-		"oF": 0,
-		"oIPL": 1,
-		"opt": 1,
-		"oT": 1,
-		"q": 100
-		},
-	"/states/WY.png": {
-		"ft": 32768,
-		"iS": 995,
-		"oA": 0,
-		"oAP": "/states/WY.png",
-		"oF": 0,
-		"oIPL": 0,
-		"opt": 0,
-		"oT": 1,
-		"q": 100
 		},
 	"/Website.sublime-project": {
 		"cB": 0,
@@ -1425,7 +367,7 @@
 	},
 "projectAttributes": {
 	"creationDate": 601490892.71849298,
-	"displayValue": "iendorsebernie",
+	"displayValue": "IEndorsePamela",
 	"displayValueWasSetByUser": 0,
 	"iconImageName": "brackets_purple",
 	"iconImageWasSetByUser": 0
@@ -1901,8 +843,7 @@
 			"optionString": "{'before': true, 'after': true}"
 			},
 		"block-scoped-var": {
-			"active": 0,
-			"optionString": ""
+			"active": 0
 			},
 		"block-spacing": {
 			"active": 0,
@@ -1957,20 +898,20 @@
 			"optionString": "'that'"
 			},
 		"constructor-super": {
-			"active": 1,
-			"optionString": ""
+			"active": 1
 			},
 		"curly": {
 			"active": 0,
 			"optionString": "'all'"
 			},
 		"default-case": {
-			"active": 0,
-			"optionString": ""
+			"active": 0
+			},
+		"default-case-last": {
+			"active": 0
 			},
 		"default-param-last": {
-			"active": 0,
-			"optionString": ""
+			"active": 0
 			},
 		"dot-location": {
 			"active": 0,
@@ -1989,8 +930,7 @@
 			"optionString": "'always', {'null': 'always'}"
 			},
 		"for-direction": {
-			"active": 0,
-			"optionString": ""
+			"active": 0
 			},
 		"func-call-spacing": {
 			"active": 0,
@@ -2021,16 +961,14 @@
 			"optionString": "{'allowImplicit': false}"
 			},
 		"global-require": {
-			"active": 0,
-			"optionString": ""
+			"active": 0
 			},
 		"grouped-accessor-pairs": {
 			"active": 0,
 			"optionString": "'anyOrder'"
 			},
 		"guard-for-in": {
-			"active": 0,
-			"optionString": ""
+			"active": 0
 			},
 		"handle-callback-err": {
 			"active": 0,
@@ -2145,44 +1083,35 @@
 			"optionString": "{'ignoreChainWithDepth': 2}"
 			},
 		"no-alert": {
-			"active": 0,
-			"optionString": ""
+			"active": 0
 			},
 		"no-array-constructor": {
-			"active": 0,
-			"optionString": ""
+			"active": 0
 			},
 		"no-async-promise-executor": {
-			"active": 0,
-			"optionString": ""
+			"active": 0
 			},
 		"no-await-in-loop": {
-			"active": 0,
-			"optionString": ""
+			"active": 0
 			},
 		"no-bitwise": {
 			"active": 0,
 			"optionString": "{'allow': ['~'], 'int32Hint': true}"
 			},
 		"no-buffer-constructor": {
-			"active": 0,
-			"optionString": ""
+			"active": 0
 			},
 		"no-caller": {
-			"active": 0,
-			"optionString": ""
+			"active": 0
 			},
 		"no-case-declarations": {
-			"active": 1,
-			"optionString": ""
+			"active": 1
 			},
 		"no-class-assign": {
-			"active": 1,
-			"optionString": ""
+			"active": 1
 			},
 		"no-compare-neg-zero": {
-			"active": 0,
-			"optionString": ""
+			"active": 0
 			},
 		"no-cond-assign": {
 			"active": 1,
@@ -2197,124 +1126,101 @@
 			"optionString": "{'allow': ['warn', 'error']}"
 			},
 		"no-const-assign": {
-			"active": 1,
-			"optionString": ""
+			"active": 1
 			},
 		"no-constant-condition": {
 			"active": 1,
 			"optionString": "{'checkLoops': true}"
 			},
 		"no-constructor-return": {
-			"active": 0,
-			"optionString": ""
+			"active": 0
 			},
 		"no-continue": {
-			"active": 0,
-			"optionString": ""
+			"active": 0
 			},
 		"no-control-regex": {
-			"active": 1,
-			"optionString": ""
+			"active": 1
 			},
 		"no-debugger": {
-			"active": 1,
-			"optionString": ""
+			"active": 1
 			},
 		"no-delete-var": {
-			"active": 1,
-			"optionString": ""
+			"active": 1
 			},
 		"no-div-regex": {
-			"active": 0,
-			"optionString": ""
+			"active": 0
 			},
 		"no-dupe-args": {
-			"active": 1,
-			"optionString": ""
+			"active": 1
 			},
 		"no-dupe-class-members": {
-			"active": 1,
-			"optionString": ""
+			"active": 1
 			},
 		"no-dupe-else-if": {
-			"active": 1,
-			"optionString": ""
+			"active": 1
 			},
 		"no-dupe-keys": {
-			"active": 1,
-			"optionString": ""
+			"active": 1
 			},
 		"no-duplicate-imports": {
 			"active": 0,
 			"optionString": "{'includeExports': false}"
 			},
 		"no-else-return": {
-			"active": 0,
-			"optionString": ""
+			"active": 0
 			},
 		"no-empty": {
 			"active": 1,
 			"optionString": "{'allowEmptyCatch': false}"
 			},
 		"no-empty-character-class": {
-			"active": 1,
-			"optionString": ""
+			"active": 1
 			},
 		"no-empty-function": {
 			"active": 0,
 			"optionString": "{'allow': []}"
 			},
 		"no-empty-pattern": {
-			"active": 1,
-			"optionString": ""
+			"active": 1
 			},
 		"no-eq-null": {
-			"active": 0,
-			"optionString": ""
+			"active": 0
 			},
 		"no-eval": {
 			"active": 0,
 			"optionString": "{'allowIndirect': false}"
 			},
 		"no-ex-assign": {
-			"active": 1,
-			"optionString": ""
+			"active": 1
 			},
 		"no-extend-native": {
 			"active": 0,
 			"optionString": "{'exceptions': []}"
 			},
 		"no-extra-bind": {
-			"active": 0,
-			"optionString": ""
+			"active": 0
 			},
 		"no-extra-boolean-cast": {
-			"active": 1,
-			"optionString": ""
+			"active": 1
 			},
 		"no-extra-labels": {
-			"active": 0,
-			"optionString": ""
+			"active": 0
 			},
 		"no-extra-parens": {
 			"active": 0,
 			"optionString": "'all', {'conditionalAssign': false, 'returnAssign': false, 'nestedBinaryExpressions': false, 'ignoreJSX': 'none', 'enforceForArrowConditionals': false}"
 			},
 		"no-extra-semi": {
-			"active": 1,
-			"optionString": ""
+			"active": 1
 			},
 		"no-fallthrough": {
-			"active": 1,
-			"optionString": ""
+			"active": 1
 			},
 		"no-floating-decimal": {
-			"active": 0,
-			"optionString": ""
+			"active": 0
 			},
 		"no-func-assign": {
-			"active": 1,
-			"optionString": ""
+			"active": 1
 			},
 		"no-global-assign": {
 			"active": 1,
@@ -2325,20 +1231,16 @@
 			"optionString": "{'boolean': true, 'number': true, 'string': true, 'allow': []}"
 			},
 		"no-implicit-globals": {
-			"active": 0,
-			"optionString": ""
+			"active": 0
 			},
 		"no-implied-eval": {
-			"active": 0,
-			"optionString": ""
+			"active": 0
 			},
 		"no-import-assign": {
-			"active": 1,
-			"optionString": ""
+			"active": 1
 			},
 		"no-inline-comments": {
-			"active": 0,
-			"optionString": ""
+			"active": 0
 			},
 		"no-inner-declarations": {
 			"active": 1,
@@ -2357,36 +1259,33 @@
 			"optionString": "{'skipStrings': true, 'skipComments': false, 'skipRegExps': true, 'skipTemplates': true}"
 			},
 		"no-iterator": {
-			"active": 0,
-			"optionString": ""
+			"active": 0
 			},
 		"no-label-var": {
-			"active": 0,
-			"optionString": ""
+			"active": 0
 			},
 		"no-labels": {
 			"active": 0,
 			"optionString": "{'allowLoop': false, 'allowSwitch': false}"
 			},
 		"no-lone-blocks": {
-			"active": 0,
-			"optionString": ""
+			"active": 0
 			},
 		"no-lonely-if": {
-			"active": 0,
-			"optionString": ""
+			"active": 0
 			},
 		"no-loop-func": {
-			"active": 0,
-			"optionString": ""
+			"active": 0
+			},
+		"no-loss-of-precision": {
+			"active": 0
 			},
 		"no-magic-numbers": {
 			"active": 0,
 			"optionString": "{'ignore': [], 'ignoreArrayIndexes': true, 'enforceConst': false, 'detectObjects': false}"
 			},
 		"no-misleading-character-class": {
-			"active": 0,
-			"optionString": ""
+			"active": 0
 			},
 		"no-mixed-operators": {
 			"active": 0,
@@ -2401,108 +1300,95 @@
 			"optionString": ""
 			},
 		"no-multi-assign": {
-			"active": 0,
-			"optionString": ""
+			"active": 0
 			},
 		"no-multi-spaces": {
 			"active": 0,
 			"optionString": "{'exceptions': {'Property': true, 'BinaryExpression': false, 'VariableDeclarator': false, 'ImportDeclaration': false}}"
 			},
 		"no-multi-str": {
-			"active": 0,
-			"optionString": ""
+			"active": 0
 			},
 		"no-multiple-empty-lines": {
 			"active": 0,
 			"optionString": "{'max': 2, 'maxBOF': 2, 'maxEOF': 2}"
 			},
 		"no-negated-condition": {
-			"active": 0,
-			"optionString": ""
+			"active": 0
 			},
 		"no-nested-ternary": {
-			"active": 0,
-			"optionString": ""
+			"active": 0
 			},
 		"no-new": {
-			"active": 0,
-			"optionString": ""
+			"active": 0
 			},
 		"no-new-func": {
-			"active": 0,
-			"optionString": ""
+			"active": 0
 			},
 		"no-new-object": {
-			"active": 0,
-			"optionString": ""
+			"active": 0
 			},
 		"no-new-require": {
-			"active": 0,
-			"optionString": ""
+			"active": 0
 			},
 		"no-new-symbol": {
-			"active": 1,
-			"optionString": ""
+			"active": 1
 			},
 		"no-new-wrappers": {
-			"active": 0,
-			"optionString": ""
+			"active": 0
 			},
 		"no-obj-calls": {
-			"active": 1,
-			"optionString": ""
+			"active": 1
 			},
 		"no-octal": {
-			"active": 1,
-			"optionString": ""
+			"active": 1
 			},
 		"no-octal-escape": {
-			"active": 0,
-			"optionString": ""
+			"active": 0
 			},
 		"no-param-reassign": {
 			"active": 0,
 			"optionString": "{'props': false}"
 			},
 		"no-path-concat": {
-			"active": 0,
-			"optionString": ""
+			"active": 0
 			},
 		"no-plusplus": {
 			"active": 0,
 			"optionString": "{'allowForLoopAfterthoughts': false}"
 			},
 		"no-process-env": {
-			"active": 0,
-			"optionString": ""
+			"active": 0
 			},
 		"no-process-exit": {
-			"active": 0,
-			"optionString": ""
+			"active": 0
+			},
+		"no-promise-executor-return": {
+			"active": 0
 			},
 		"no-proto": {
-			"active": 0,
-			"optionString": ""
+			"active": 0
 			},
 		"no-prototype-builtins": {
-			"active": 0,
-			"optionString": ""
+			"active": 0
 			},
 		"no-redeclare": {
 			"active": 1,
 			"optionString": "{'builtinGlobals': false}"
 			},
 		"no-regex-spaces": {
-			"active": 1,
-			"optionString": ""
+			"active": 1
+			},
+		"no-restricted-exports": {
+			"active": 0,
+			"optionString": "{'restrictedNamedExports': []}"
 			},
 		"no-restricted-globals": {
 			"active": 0,
 			"optionString": "'event', 'fdescribe'"
 			},
 		"no-restricted-imports": {
-			"active": 0,
-			"optionString": ""
+			"active": 0
 			},
 		"no-restricted-modules": {
 			"active": 0,
@@ -2521,40 +1407,33 @@
 			"optionString": "'except-parens'"
 			},
 		"no-return-await": {
-			"active": 0,
-			"optionString": ""
+			"active": 0
 			},
 		"no-script-url": {
-			"active": 0,
-			"optionString": ""
+			"active": 0
 			},
 		"no-self-assign": {
 			"active": 1,
 			"optionString": "{'props': true}"
 			},
 		"no-self-compare": {
-			"active": 0,
-			"optionString": ""
+			"active": 0
 			},
 		"no-sequences": {
-			"active": 0,
-			"optionString": ""
+			"active": 0
 			},
 		"no-setter-return": {
-			"active": 1,
-			"optionString": ""
+			"active": 1
 			},
 		"no-shadow": {
 			"active": 0,
 			"optionString": "{'builtinGlobals': false, 'hoist': 'functions', 'allow': []}"
 			},
 		"no-shadow-restricted-names": {
-			"active": 0,
-			"optionString": ""
+			"active": 0
 			},
 		"no-sparse-arrays": {
-			"active": 1,
-			"optionString": ""
+			"active": 1
 			},
 		"no-sync": {
 			"active": 0,
@@ -2565,20 +1444,16 @@
 			"optionString": "{allowIndentationTabs: false}"
 			},
 		"no-template-curly-in-string": {
-			"active": 0,
-			"optionString": ""
+			"active": 0
 			},
 		"no-ternary": {
-			"active": 0,
-			"optionString": ""
+			"active": 0
 			},
 		"no-this-before-super": {
-			"active": 1,
-			"optionString": ""
+			"active": 1
 			},
 		"no-throw-literal": {
-			"active": 0,
-			"optionString": ""
+			"active": 0
 			},
 		"no-trailing-spaces": {
 			"active": 0,
@@ -2589,36 +1464,34 @@
 			"optionString": "{'typeof': false}"
 			},
 		"no-undef-init": {
-			"active": 0,
-			"optionString": ""
+			"active": 0
 			},
 		"no-undefined": {
-			"active": 0,
-			"optionString": ""
+			"active": 0
 			},
 		"no-underscore-dangle": {
 			"active": 0,
 			"optionString": "{'allow': [], 'allowAfterThis': false, 'allowAfterSuper': false, 'enforceInMethodNames': false}"
 			},
 		"no-unexpected-multiline": {
-			"active": 1,
-			"optionString": ""
+			"active": 1
 			},
 		"no-unmodified-loop-condition": {
-			"active": 0,
-			"optionString": ""
+			"active": 0
 			},
 		"no-unneeded-ternary": {
 			"active": 0,
 			"optionString": "{'defaultAssignment': true}"
 			},
 		"no-unreachable": {
-			"active": 1,
-			"optionString": ""
+			"active": 1
+			},
+		"no-unreachable-loop": {
+			"active": 0,
+			"optionString": "{'ignore': []}"
 			},
 		"no-unsafe-finally": {
-			"active": 1,
-			"optionString": ""
+			"active": 1
 			},
 		"no-unsafe-negation": {
 			"active": 1,
@@ -2629,8 +1502,7 @@
 			"optionString": "{'allowShortCircuit': false, 'allowTernary': false, 'allowTaggedTemplates': false}"
 			},
 		"no-unused-labels": {
-			"active": 1,
-			"optionString": ""
+			"active": 1
 			},
 		"no-unused-vars": {
 			"active": 1,
@@ -2640,41 +1512,37 @@
 			"active": 0,
 			"optionString": "{'functions': true, 'classes': true, 'variables': true}"
 			},
+		"no-useless-backreference": {
+			"active": 0
+			},
 		"no-useless-call": {
-			"active": 0,
-			"optionString": ""
+			"active": 0
 			},
 		"no-useless-catch": {
-			"active": 0,
-			"optionString": ""
+			"active": 0
 			},
 		"no-useless-computed-key": {
 			"active": 0,
 			"optionString": ""
 			},
 		"no-useless-concat": {
-			"active": 0,
-			"optionString": ""
+			"active": 0
 			},
 		"no-useless-constructor": {
-			"active": 0,
-			"optionString": ""
+			"active": 0
 			},
 		"no-useless-escape": {
-			"active": 0,
-			"optionString": ""
+			"active": 0
 			},
 		"no-useless-rename": {
 			"active": 0,
 			"optionString": "{'ignoreDestructuring': false, 'ignoreImport': false, 'ignoreExport': false}"
 			},
 		"no-useless-return": {
-			"active": 0,
-			"optionString": ""
+			"active": 0
 			},
 		"no-var": {
-			"active": 0,
-			"optionString": ""
+			"active": 0
 			},
 		"no-void": {
 			"active": 0,
@@ -2685,12 +1553,10 @@
 			"optionString": "{'terms': ['todo', 'fixme', 'xxx'], 'location': 'start'}"
 			},
 		"no-whitespace-before-property": {
-			"active": 0,
-			"optionString": ""
+			"active": 0
 			},
 		"no-with": {
-			"active": 0,
-			"optionString": ""
+			"active": 0
 			},
 		"nonblock-statement-body-position": {
 			"active": 0,
@@ -2737,8 +1603,7 @@
 			"optionString": "{blankLine: 'always', prev:'*', next:'return'}"
 			},
 		"prefer-arrow-callback": {
-			"active": 0,
-			"optionString": ""
+			"active": 0
 			},
 		"prefer-const": {
 			"active": 0,
@@ -2749,40 +1614,32 @@
 			"optionString": "{'array': true, 'object': true}, {'enforceForRenamedProperties': false}"
 			},
 		"prefer-exponentiation-operator": {
-			"active": 0,
-			"optionString": ""
+			"active": 0
 			},
 		"prefer-named-capture-group": {
-			"active": 0,
-			"optionString": ""
+			"active": 0
 			},
 		"prefer-numeric-literals": {
-			"active": 0,
-			"optionString": ""
+			"active": 0
 			},
 		"prefer-object-spread": {
-			"active": 0,
-			"optionString": ""
+			"active": 0
 			},
 		"prefer-promise-reject-errors": {
 			"active": 0,
 			"optionString": "{'allowEmptyReject': false}"
 			},
 		"prefer-regex-literals": {
-			"active": 0,
-			"optionString": ""
+			"active": 0
 			},
 		"prefer-rest-params": {
-			"active": 0,
-			"optionString": ""
+			"active": 0
 			},
 		"prefer-spread": {
-			"active": 0,
-			"optionString": ""
+			"active": 0
 			},
 		"prefer-template": {
-			"active": 0,
-			"optionString": ""
+			"active": 0
 			},
 		"quote-props": {
 			"active": 0,
@@ -2797,24 +1654,20 @@
 			"optionString": "'always'"
 			},
 		"require-atomic-updates": {
-			"active": 0,
-			"optionString": ""
+			"active": 0
 			},
 		"require-await": {
-			"active": 0,
-			"optionString": ""
+			"active": 0
 			},
 		"require-jsdoc": {
 			"active": 0,
 			"optionString": "{'require': {'FunctionDeclaration': true, 'MethodDefinition': false, 'ClassDeclaration': false, 'ArrowFunctionExpression': false}}"
 			},
 		"require-unicode-regexp": {
-			"active": 0,
-			"optionString": ""
+			"active": 0
 			},
 		"require-yield": {
-			"active": 1,
-			"optionString": ""
+			"active": 1
 			},
 		"rest-spread-spacing": {
 			"active": 0,
@@ -2877,8 +1730,7 @@
 			"optionString": "{'after': true, 'before': false}"
 			},
 		"symbol-description": {
-			"active": 0,
-			"optionString": ""
+			"active": 0
 			},
 		"template-curly-spacing": {
 			"active": 0,
@@ -2905,16 +1757,14 @@
 			"optionString": "{'requireStringLiterals': true}"
 			},
 		"vars-on-top": {
-			"active": 0,
-			"optionString": ""
+			"active": 0
 			},
 		"wrap-iife": {
 			"active": 0,
 			"optionString": "'outside'"
 			},
 		"wrap-regex": {
-			"active": 0,
-			"optionString": ""
+			"active": 0
 			},
 		"yield-star-spacing": {
 			"active": 0,
@@ -3309,7 +2159,9 @@
 		"autoOutputPathRelativePath": "",
 		"autoOutputPathReplace1": "",
 		"autoOutputPathReplace2": "",
-		"autoOutputPathStyle": 0
+		"autoOutputPathStyle": 0,
+		"webpOptimizationPresetUUID": "lpckwebp-none",
+		"webpRGBQuality": 75
 		},
 	"languageDefaultsHAML": {
 		"autoOutputAction": 0,
@@ -3335,7 +2187,9 @@
 		"autoOutputPathReplace2": "",
 		"autoOutputPathStyle": 0,
 		"outputFormat": 0,
-		"quality": 100
+		"quality": 100,
+		"webpOptimizationPresetUUID": "lpckwebp-none",
+		"webpRGBQuality": 75
 		},
 	"languageDefaultsJS": {
 		"autoOutputAction": 0,
@@ -3427,7 +2281,9 @@
 		"autoOutputPathReplace2": "",
 		"autoOutputPathStyle": 0,
 		"optimizerType": 1,
-		"quality": 100
+		"quality": 100,
+		"webpOptimizationPresetUUID": "lpckwebp-none",
+		"webpRGBQuality": 75
 		},
 	"languageDefaultsPUG": {
 		"autoOutputAction": 0,
@@ -3828,6 +2684,8 @@
 		},
 	"uglifyMangleNames": 1,
 	"uglifyReservedNamesString": "$,exports,require",
+	"webpPresets": {
+		},
 	"websiteRelativeRoot": ""
 	},
 "settingsFileVersion": "3"

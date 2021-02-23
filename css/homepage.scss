@@ -1,112 +1,182 @@
 
-.swatch {
-	height:1.5em;
-	width:3.3em;
-	display:inline-block;
-}
-
-.background-thumbnail {
-	max-width:44%;
-	height:auto;
-}
 
 h1 {
 	margin:0;
-	font-family:jubilat,serif;
 	font-weight:700;
-	font-size:5em;
+	font-size:3em;
+	font-family: sans-serif;
+	text-shadow:0 0 3px white;
 }
 
-h1.nina {
-	font-size:4em;
-}
 
 @media only screen and (max-width:850px) {
 	h1 {
-		font-size:3em;
+		font-size:2.5em;
 	}
-	h1.nina {
+}
+@media only screen and (max-width:650px) {
+	h1 {
 		font-size:2em;
 	}
 }
 @media only screen and (max-width:550px) {
 	h1 {
-		font-size:2em;
-	}
-	h1.nina {
 		font-size:1.5em;
 	}
 }
-@media only screen and (max-width:350px) {
+@media only screen and (max-width:400px) {
 	h1 {
-		font-size:1.5em;
-	}
-	h1.nina {
 		font-size:1.25em;
 	}
 }
 
 
 #avatarImage {
+	margin:10px 0 10px 10px;
 	max-width:50px;
 	float:right;
 	border:1px solid var(--color-ink-med);
 }
 
 body > header {
-	background-color:var(--color-ink-high);
-	color:var(--color-paper-high);
+	border-top: 10px solid green;
+	border-bottom: 10px solid purple;
+	padding:2em;
+
+
+	p {
+		text-align:center;
+		color:white;
+		background-color:rgba(0,0,0,0.5);
+	}
+
+	aside {
+		color: orange;
+		text-shadow:0 0 3px white;
+	}
 }
 
-.ksbox.half {
-	width:45%;
+.ksflex.half {
+	width:50%;
 }
 
 @media only screen and (max-width:($mainBreakpoint - 1px)) {
 
-	.ksbox.half {
+	.ksflex.half {
 		width:100%;
 	}
 
 }
 
-
-.button {
-	padding:1em;
-	background-color:green;
-	color:white;
-	font-weight:bold;
-	text-decoration:none;
+.supertitle {
+	font-size: 75%;
+	text-transform: uppercase;
+	color: #f39d04;
+	margin-right: 1em;
 }
 
-textarea {
-	width:90%;
+.download-container {
+	margin:1em 0;
+	text-align: right;	
 }
 
-.background-colors, .background-images {
-	
+.button, body.other .filebutton {
+	text-transform: uppercase;
+	text-decoration: none;
+	background: #623894;
+	color:yellow !important;
+	padding: 10px 20px;
+	border-radius: 20px;
+	display: inline-block;
+	border: none;
+	transition: all 0.4s ease 0s;
+
+	&:disabled {
+		opacity:0.3
+	}
+}
+
+.button:hover {
+	text-shadow: 0px 0px 6px rgba(255, 255, 255, 1);
+	-webkit-box-shadow: 0px 5px 40px -10px rgba(0,0,0,0.57);
+	-moz-box-shadow: 0px 5px 40px -10px rgba(0,0,0,0.57);
+	transition: all 0.4s ease 0s;
+}
+
+// Don't show download button on iOS
+body.iPad .hidden-ios, body.iPhone .hidden-ios {
+	display:none !important;
+}
+
+body.other .visible-ios {
+	display:none !important
+}
+
+form.generator {
+
+	select {
+		display:block;
+	}
+
+	input[type="text"], textarea, select {
+		display:block;
+		width:calc(100% - 30px);
+	}
+	textarea {
+		height:7em;
+	}
+	input[type="checkbox"] {
+		margin-right:0.5em;
+	}
+	label {
+		font-size:75%;
+		line-height:1.0;
+	}
+	.small { font-size: 75%; }
+
+	input[type="file"] {
+		max-width:100%;
+		margin:0 auto;
+		display:block !important;
+	}
+
+	input[type="submit"] {
+		margin:1em auto;
+		display:block;
+	}
+
 	input[type="radio"] {
 		opacity: 0;
 		position: fixed;
 		width: 0;
 	}
 
-	.swatch, img {
+	img {
 		border:4px solid var(--color-paper-high);
 	}
 
-	input[type="radio"]:checked + .swatch, input[type="radio"]:checked + img  {
-		border-color: #4c4;
-		border-style:solid;
+	// Hack so iphone doesn't zoom in on input
+	input, input:active, input:focus, input:focus-within, input:hover, input:visited {
+	    font-size: 16px!important;
 	}
-	input[type="radio"]:focus + .swatch, input[type="radio"]:focus + img {
-		border-style:dashed;
-	}
-	
-	padding-bottom:0.5em;
+
 }
 
 
+
+// Don't allow dragging out of placeholder image, or of image on non-iPhone - use download button instead.
+
+.placeholder, body.other .resultImage {
+	pointer-events: none;
+}
+
+.placeholder.supertitle {
+	margin:0.5em 0;
+}
+
+.resultImage {
+	margin-bottom:10px;
+}
 
 
 
